@@ -1,0 +1,20 @@
+{
+  "name": "@rm-frontend-website/distribution",
+  "version": "1.0.0",
+  "description": "website for the ruhmesmeile frontend",
+  "main": "index.js",
+  "scripts": {
+    "start": "rm-frontend watch",
+    "build": "rm-frontend build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@bitbucket.ruhmesmeile.tools:7999/front/rm-frontend-website.git"
+  },
+  "author": "Jonas Ulrich | ruhmesmeile GmbH",
+  "license": "ISC",
+  "private": true,
+  "dependencies": {
+    "@rm-frontend-website/instance": "^1.1.1"
+  }
+}
