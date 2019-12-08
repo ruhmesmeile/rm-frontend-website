@@ -17,7 +17,8 @@
   "license": "ISC",
   "private": true,
   "dependencies": {
-    "@rm-frontend-website/instance": "^3.0.0"
+    "@rm-frontend-website/instance": "^3.0.0",
+    "@rm-frontend/netlify-cms": "file:../rm-frontend/packages/@rm-frontend/netlify-cms"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.9.0"
