@@ -4,10 +4,11 @@
   "description": "website for the ruhmesmeile frontend",
   "main": "index.js",
   "scripts": {
+    "build-all": "npm run build && npm run eleventy-build",
     "start": "rm-frontend watch",
     "build": "rm-frontend build",
-    "eleventy-start": "npx @11ty/eleventy --input=source --output=public --formats=md,html,hbs --serve",
-    "eleventy-build": "npx @11ty/eleventy --input=source --output=public --formats=md,html,hbs"
+    "eleventy-start": "npx @11ty/eleventy --input=source --output=_site --formats=md,html,hbs --serve",
+    "eleventy-build": "npx @11ty/eleventy --input=source --output=_site --formats=md,html,hbs"
   },
   "repository": {
     "type": "git",
@@ -17,7 +18,7 @@
   "license": "ISC",
   "private": true,
   "dependencies": {
-    "@rm-frontend-website/instance": "^3.0.0",
+    "@rm-frontend-website/instance": "^3.0.1",
     "@rm-frontend/netlify-cms": "file:../rm-frontend/packages/@rm-frontend/netlify-cms"
   },
   "devDependencies": {

@@ -11,6 +11,7 @@ module.exports = require('@rm-frontend-website/instance').extend({
     publicJs: 'js',
     publicCss: 'css',
     publicFonts: 'fonts',
+    publicImages: 'images',
   },
   modules: {
     '@rm-frontend/base': {
