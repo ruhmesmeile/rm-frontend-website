@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html class="" lang="de">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+
+    <link rel="preload" href="/fonts/dosis-v16-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/images/favicons/manifest.json">
+    <link rel="mask-icon" href="/images/favicons/safari-pinned-tag.svg">
+    <link rel="shortcut icon" href="/images/favicons/favicon.ico">
+    <meta name="msapplication-config" content="/images/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#0e7273">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="/css/base.inline.css?1574105935506" inline />
+    <link rel="stylesheet" href="/css/download.inline.css?1574105935506" inline />
+
+    <link rel="stylesheet" href="/css/base.css?1574105935506" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="/css/base.css?1574105935506"></noscript>
+    <link rel="stylesheet" href="/css/download.css?1574105935506" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="/css/download.css?1574105935506"></noscript>
+
+    <script>
+      (function (w) {
+        w.rm = w.rm || {};
+        w.rm.googleMapsKey = 'AIzaSyCe9GuS1A1Pq1WownRL1lOD6a6-f0Xk1qw';
+        w.rm.fallbackLang = 'de';
+        w.rm.validationMessages = {
+          // https://github.com/cferdinandi/bouncer#options-and-settings
+          missingValue: {
+            default: 'Dieses Feld ist ein Pflichtfeld.'
+          },
+          patternMismatch: {
+            email: 'Geben Sie bitte eine gültige E-Mail Adresse ein.',
+            url: 'Geben Sie bitte eine gültige URL ein.',
+            number: 'Geben Sie bitte eine Nummer ein.',
+            date: 'Bitte geben Sie ein gültiges Datum ein.'
+          },
+          outOfRange: {
+            over: 'Geben Sie bitte einen Wert kleiner oder gleich {max} ein.',
+            under: 'Geben Sie bitte einen Wert größer oder gleich {min} ein.'
+          },
+          wrongLength: {
+            over: 'Geben Sie bitte maximal {maxlength} Zeichen ein.',
+            under: 'Geben Sie bitte mindestens {minlength} Zeichen ein.'
+          },
+          checkboxGroupRequired: 'Dieses Feld ist ein Pflichtfeld.'
+        };
+      })(window);
+    </script>
+
+    <!-- Netlify Identity Widget: https://www.netlifycms.org/docs/add-to-your-site/ -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+    <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+    
+    <!-- End Pattern Lab -->
+  </head>
+  <body class="" id="🔝" tabindex="0">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="0" height="0" hidden>
+      <symbol id="icon-arrow-up" viewBox="0 0 24 24">
+        <path d="M16.6,15.3L12,10.7l-4.6,4.6L6,13.8l6-6l6,6L16.6,15.3z" />
+      </symbol>      <symbol id="icon-arrow-forward" viewBox="0 0 512 512">
+        <path d="M85 277.375h259.704L225.002 397.077 256 427l171-171L256 85l-29.922 29.924 118.626 119.701H85v42.75z"/>
+      </symbol>      <symbol id="icon-zoom" viewBox="0 0 24 24">
+          <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+          <path fill="none" d="M0 0h24v24H0V0z"/>
+          <path d="M12 10h-2v2H9v-2H7V9h2V7h1v2h2v1z"/>
+      </symbol>      <symbol id="icon-arrow-down" viewBox="0 0 24 24">
+        <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z" />
+      </symbol>      <symbol id="icon-contact" viewBox="0 0 24 24">
+        <path d="M3.6 12.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.5 0 1 .5 1 1V22c0 .5-.5 1-1 1C7.6 23 0 15.4 0 6c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .7-.2 1-.1 0-2.3 2.2-2.3 2.2zM13 5l3.5 1.8L20 5v1.2L16.5 8 13 6.2V5zm9.5-4c.8 0 1.5.7 1.5 1.5v9c0 .8-.7 1.5-1.5 1.5H12l-3 3V2.5c0-.8.7-1.5 1.5-1.5h12zM21 10V4h-9v6h9z" />
+      </symbol>      <symbol id="icon-arrow-right" viewBox="0 0 24 24">
+        <path d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z" />
+      </symbol>      <symbol id="icon-phone" viewBox="0 0 24 24">
+        <title>Telefon</title>
+        <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+      </symbol>      <symbol id="icon-email" viewBox="0 0 24 24">
+        <title>Email</title>
+        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+      </symbol>      <symbol id="icon-login" viewBox="0 0 24 24">
+        <title>Login</title>
+        <path d="M0 0h24v24H0z" fill="none" />
+        <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z" />
+      </symbol>      <symbol id="icon-person" viewBox="0 0 24 24">
+        <title>Person</title>
+        <path d="M12,12c2.3,0,4.3-1.9,4.3-4.3S14.3,3.5,12,3.5S7.7,5.4,7.7,7.7S9.6,12,12,12z M12,14.1c-2.9,0-8.5,1.4-8.5,4.3v2.1h16.9
+            v-2.1C20.5,15.6,14.9,14.1,12,14.1z" />
+        <path fill="none" d="M0,0h24v24H0V0z" />
+      </symbol>      <symbol id="icon-logout" viewBox="0 0 24 24">
+        <title>Logout</title>
+        <path d="M16.2,9c-0.5,0-1,0-1.5,0c0-1.8,0-3.7,0-5.5c-3.3,0-6.6,0-9.9,0c0.1,0,0.1,0.1,0.1,0.1c1.1,0.6,2.2,1.3,3.3,1.9
+            C8.9,5.8,9.1,6.4,9.1,7c0,1.1,0,2.3,0,3.4c0,2.7,0,5.3,0,8c0,0.1,0,0.1,0,0.2c1.9,0,3.7,0,5.6,0c0-1.4,0-2.8,0-4.2c0.5,0,1,0,1.6,0
+            c0,0.1,0,0.1,0,0.1c0,1.6,0,3.2,0,4.8c0,0.6-0.2,0.8-0.8,0.9c-0.1,0-0.3,0-0.5,0c-1.9,0-3.8,0-5.7,0c0,0-0.1,0-0.2,0
+            c0,0.1,0,0.1,0,0.2c0,0.8,0,1.6,0,2.5c0,0.2,0,0.5-0.1,0.7c-0.1,0.4-0.4,0.5-0.8,0.4c-0.2,0-0.4-0.1-0.5-0.2
+            c-2-1.2-4.1-2.3-6.1-3.5c-0.4-0.3-0.7-0.7-0.7-1.2c0-5.4,0-10.8,0-16.2c0-0.4,0.1-0.7,0.5-0.9c0.2-0.1,0.4-0.1,0.6-0.1
+            c4.1,0,8.2,0,12.3,0c0.3,0,0.6,0,1,0c0.1,0,0.2,0,0.3,0c0.5,0.1,0.7,0.3,0.7,0.8c0,0.5,0,1,0,1.4c0,1.6,0,3.2,0,4.8
+            C16.2,8.9,16.2,8.9,16.2,9z" />
+        <path d="M17.8,12.8c-0.1,0-0.1,0-0.2,0c-1.2,0-2.3,0-3.5,0c-0.3,0-0.6,0-0.9-0.2c-0.4-0.2-0.6-0.5-0.6-0.9c0-0.5,0.3-0.9,0.7-1
+            c0.2-0.1,0.4-0.1,0.7-0.1c1.2,0,2.4,0,3.7,0c0.1,0,0.1,0,0.2,0c0-0.1,0-0.1,0-0.2c0-0.5,0-1.1,0-1.6c0-0.2,0-0.3,0.1-0.5
+            C18,8.1,18.2,8,18.4,8.1c0.2,0.1,0.3,0.1,0.5,0.2c1.3,0.9,2.6,1.9,3.9,2.8c0,0,0.1,0,0.1,0.1c0.3,0.3,0.3,0.6,0,0.8
+            c-0.6,0.4-1.1,0.8-1.7,1.3c-0.8,0.6-1.6,1.1-2.3,1.7c-0.1,0.1-0.3,0.2-0.4,0.2c-0.2,0.1-0.4,0-0.5-0.2c0-0.1-0.1-0.3-0.1-0.4
+            c0-0.5,0-1.1,0-1.6C17.8,12.9,17.8,12.8,17.8,12.8z" />
+      </symbol>      <symbol id="icon-chevron-left" viewBox="0 0 24 24">
+        <title>Vorherige Seite</title>
+        <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+      </symbol>      <symbol id="icon-chevron-right" viewBox="0 0 24 24">
+        <title>Nächste Seite</title>
+        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+      </symbol>      <symbol id="icon-facebook" viewBox="0 0 24 24">
+        <title xml:lang="en">Facebook</title>
+        <path d="M13.3,20.3H9.8V12H8V9.1h1.8V7.4c0-2.3,1-3.7,3.8-3.7H16v2.9h-1.5c-1.1,0-1.2,0.4-1.2,1.1l0,1.4H16L15.7,12h-2.4L13.3,20.3
+            L13.3,20.3z" />
+      </symbol>      <symbol id="icon-instagram" viewBox="0 0 24 24">
+        <title xml:lang="en">Instagram</title>
+        <path
+          d="M12,0C8.7,0,8.3,0,7.1,0.1C5.8,0.1,4.9,0.3,4.1,0.6C3.4,0.9,2.7,1.3,2,2C1.3,2.7,0.9,3.4,0.6,4.1
+            C0.3,4.9,0.1,5.8,0.1,7.1C0,8.3,0,8.7,0,12c0,3.3,0,3.7,0.1,4.9c0.1,1.3,0.3,2.1,0.6,2.9C0.9,20.6,1.3,21.3,2,22
+            c0.7,0.7,1.3,1.1,2.1,1.4c0.8,0.3,1.6,0.5,2.9,0.6C8.3,24,8.7,24,12,24c3.3,0,3.7,0,4.9-0.1c1.3-0.1,2.1-0.3,2.9-0.6
+            c0.8-0.3,1.5-0.7,2.1-1.4c0.7-0.7,1.1-1.3,1.4-2.1c0.3-0.8,0.5-1.6,0.6-2.9C24,15.7,24,15.3,24,12c0-3.3,0-3.7-0.1-4.9
+            c-0.1-1.3-0.3-2.1-0.6-2.9C23.1,3.4,22.7,2.7,22,2c-0.7-0.7-1.3-1.1-2.1-1.4c-0.8-0.3-1.6-0.5-2.9-0.6C15.7,0,15.3,0,12,0L12,0
+            L12,0z M12,2.2c3.2,0,3.6,0,4.8,0.1c1.2,0.1,1.8,0.2,2.2,0.4c0.6,0.2,1,0.5,1.4,0.9c0.4,0.4,0.7,0.8,0.9,1.4
+            c0.2,0.4,0.4,1.1,0.4,2.2c0.1,1.3,0.1,1.6,0.1,4.8c0,3.2,0,3.6-0.1,4.8c-0.1,1.2-0.2,1.8-0.4,2.2c-0.2,0.6-0.5,1-0.9,1.4
+            c-0.4,0.4-0.8,0.7-1.4,0.9c-0.4,0.2-1.1,0.4-2.2,0.4c-1.3,0.1-1.6,0.1-4.8,0.1c-3.2,0-3.6,0-4.8-0.1c-1.2-0.1-1.8-0.2-2.2-0.4
+            c-0.6-0.2-1-0.5-1.4-0.9c-0.4-0.4-0.7-0.8-0.9-1.4c-0.2-0.4-0.4-1.1-0.4-2.2c-0.1-1.3-0.1-1.6-0.1-4.8c0-3.2,0-3.6,0.1-4.8
+            C2.3,6,2.5,5.3,2.6,4.9c0.2-0.6,0.5-1,0.9-1.4C4,3.1,4.4,2.9,4.9,2.6C5.3,2.5,6,2.3,7.2,2.2C8.4,2.2,8.8,2.2,12,2.2" />
+        <path d="M12,16c-2.2,0-4-1.8-4-4c0-2.2,1.8-4,4-4c2.2,0,4,1.8,4,4C16,14.2,14.2,16,12,16L12,16z M12,5.8
+            c-3.4,0-6.2,2.8-6.2,6.2c0,3.4,2.8,6.2,6.2,6.2c3.4,0,6.2-2.8,6.2-6.2C18.2,8.6,15.4,5.8,12,5.8L12,5.8z" />
+        <path d="M19.8,5.6c0,0.8-0.6,1.4-1.4,1.4C17.6,7,17,6.4,17,5.6c0-0.8,0.6-1.4,1.4-1.4C19.2,4.2,19.8,4.8,19.8,5.6
+            L19.8,5.6z" />
+      </symbol>      <symbol id="icon-twitter" viewBox="0 0 24 24">
+        <title xml:lang="en">Twitter</title>
+        <path
+          d="M19.6,6.2c0.8-0.5,1.5-1.4,1.8-2.4c-0.8,0.5-1.7,0.8-2.6,1C18,4,17,3.5,15.8,3.5c-2.2,0-4.1,1.9-4.1,4.3c0,0.3,0,0.7,0.1,1
+            C8.5,8.6,5.5,6.9,3.5,4.3C3.1,4.9,2.9,5.7,2.9,6.5c0,1.5,0.7,2.8,1.8,3.6c-0.7,0-1.3-0.2-1.8-0.5v0.1c0,2.1,1.4,3.8,3.3,4.2
+            c-0.3,0.1-0.7,0.2-1.1,0.2c-0.3,0-0.5,0-0.8-0.1c0.5,1.7,2,2.9,3.8,3c-1.4,1.1-3.1,1.8-5,1.8c-0.3,0-0.6,0-1-0.1
+            c1.8,1.2,3.9,1.9,6.2,1.9c7.5,0,11.5-6.5,11.5-12.2c0-0.2,0-0.4,0-0.6c0.8-0.6,1.5-1.4,2-2.2C21.2,5.9,20.4,6.1,19.6,6.2L19.6,6.2z" />
+      </symbol>      <symbol id="icon-youtube" viewBox="0 0 24 24">
+        <title xml:lang="en">Youtube</title>
+        <path d="M9.8,14.7l0-5.9l5.7,2.9L9.8,14.7L9.8,14.7z M22.3,7.8c0,0-0.2-1.4-0.8-2.1c-0.8-0.8-1.7-0.8-2.1-0.9
+            c-3-0.2-7.4-0.2-7.4-0.2h0c0,0-4.4,0-7.4,0.2c-0.4,0-1.3,0.1-2.1,0.9C1.9,6.4,1.7,7.8,1.7,7.8s-0.2,1.7-0.2,3.4v1.6
+            c0,1.7,0.2,3.4,0.2,3.4s0.2,1.4,0.8,2.1c0.8,0.8,1.9,0.8,2.3,0.9c1.7,0.2,7.2,0.2,7.2,0.2s4.4,0,7.4-0.2c0.4,0,1.3-0.1,2.1-0.9
+            c0.6-0.6,0.8-2.1,0.8-2.1s0.2-1.7,0.2-3.4v-1.6C22.5,9.5,22.3,7.8,22.3,7.8L22.3,7.8z" />
+      </symbol>      <symbol id="icon-xing" viewBox="0 0 24 24">
+        <title>Xing</title>
+        <path d="M9.3,7.1C9.1,6.7,8.9,6.6,8.6,6.6H6c-0.2,0-0.3,0.1-0.3,0.2C5.6,6.8,5.6,7,5.7,7.1l1.7,3c0,0,0,0,0,0L4.7,15
+            c-0.1,0.1-0.1,0.3,0,0.4c0.1,0.1,0.2,0.2,0.3,0.2h2.6c0.3,0,0.5-0.2,0.7-0.5c1.8-3.2,2.7-4.8,2.8-4.9L9.3,7.1z M19.8,3.6
+            c0.1-0.2,0.1-0.3,0-0.4C19.8,3.1,19.7,3,19.5,3h-2.6c-0.3,0-0.5,0.2-0.7,0.5c-3.7,6.6-5.6,10-5.8,10.2l3.7,6.7
+            c0.2,0.3,0.4,0.5,0.7,0.5h2.6c0.2,0,0.3-0.1,0.3-0.2c0.1-0.1,0.1-0.3,0-0.4l-3.6-6.7v0L19.8,3.6z" />
+      </symbol>      <symbol id="icon-linkedin" viewBox="0 0 24 24">
+        <title>LinkedIn</title>
+        <path d="M21.4,1H2.7C1.7,1,1,1.7,1,2.6v18.8c0,0.9,0.7,1.6,1.6,1.6h18.8c0.9,0,1.6-0.7,1.6-1.6V2.6C23,1.7,22.3,1,21.4,1z
+             M7.5,19.8H4.3V9.2h3.3L7.5,19.8L7.5,19.8z M5.9,7.8c-1,0-1.9-0.8-1.9-1.9c0-1,0.8-1.9,1.9-1.9c1,0,1.9,0.8,1.9,1.9S7,7.8,5.9,7.8
+            z M19.8,19.8h-3.3v-5.1c0-1.2,0-2.7-1.6-2.7c-1.7,0-1.9,1.3-1.9,2.7v5.2H9.6V9.2h3.1v1.5l0,0c0.5-0.8,1.5-1.6,3.1-1.6
+            c3.3,0,3.9,2.2,3.9,5V19.8z" />
+      </symbol>      <symbol id="icon-download" viewBox="0 0 24 24">
+        <title xml:lang="en">Download</title>
+        <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z" />
+      </symbol>    </svg>
+
+<nav class="nav-skip" aria-label="Sprungmarken">
+  <ul class="nav-skip__list">
+    <li><a class="nav-skip__link" href="#content">Zum Inhalt springen</a></li>
+    <li><a class="nav-skip__link" data-nav="main" href="#nav-main">Zur Hauptnavigation springen</a></li>
+  </ul>
+</nav>
+
+<div class="page-wrap">
+  <button type="button" class="nav-toggle nav-sidebar-toggle" id="toggle-sidebar" aria-controls="sidebar" aria-expanded="false" data-component="base.sidebar-toggle">
+      <span class="nav-toggle__label">Navigation öffnen/schließen</span>
+      <div class="nav-toggle__icon">
+        <div class="nav-toggle__icon__middle"></div>
+      </div>
+    </button>
+    <div id="sidebar" class="page-wrap__sidebar" data-component="base.sidebar">
+      <div class="page-wrap__sidebar__content" id="sidebar-content">
+        <div class="logo-main-wrap">
+          <meta itemprop="name" content="25SheepStreet" />
+          <a href="index.html" class="logo-main" itemprop="url" title="Startseite">
+            <img src="/images/logo-dark.svg" alt="Startseite" itemprop="logo" width="230" height="33">
+          </a>
+        </div>
+  
+        <nav class="nav-sidebar" id="nav-sidebar" aria-label="Hauptnavigation" data-component="base.nav-sidebar">
+          <ul class="nav-sidebar__list nav-sidebar__list--level-1">
+            <li class="nav-sidebar__item nav-sidebar__item--level-1">
+              <a href="javascript:void(0)" class="nav-sidebar__item__link">Getting started</a>
+            </li>
+            <li class="nav-sidebar__item nav-sidebar__item--level-1" data-component="base.slide-dropdown">
+              <details>
+                <summary>
+                  <div class="nav-sidebar__item__link">
+                    Konzepte
+                    <svg class="icon nav-sidebar__icon" role="img">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-down"></use>
+                    </svg> </div>
+                </summary>
+                <ul class="nav-sidebar__list nav-sidebar__list--level-2">
+                  <li class="nav-sidebar__item nav-sidebar__item--level-2">
+                    <a href="javascript:void(0)" class="nav-sidebar__item__link">Struktur</a>
+                  </li>
+                  <li class="nav-sidebar__item nav-sidebar__item--level-2" data-component="base.slide-dropdown">
+                    <details>
+                      <summary>
+                        <div class="nav-sidebar__item__link">
+                          Twelve South Lorem ipsum Lorem lorem lorem
+                          <svg class="icon nav-sidebar__icon" role="img">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-down"></use>
+                          </svg> </div>
+                      </summary>
+                      <ul class="nav-sidebar__list nav-sidebar__list--level-3">
+                        <li class="nav-sidebar__item nav-sidebar__item--level-3">
+                          <a href="javascript:void(0)" class="nav-sidebar__item__link">3.Navigationsebene</a>
+                        </li>
+                        <li class="nav-sidebar__item nav-sidebar__item--level-3">
+                          <a href="javascript:void(0)" class="nav-sidebar__item__link">QuietComfort 35</a>
+                        </li>
+                        <li class="nav-sidebar__item nav-sidebar__item--level-3">
+                          <a href="javascript:void(0)" class="nav-sidebar__item__link">Twelve South HiRise</a>
+                        </li>
+                      </ul>
+                    </details>
+                  </li>
+                  <li class="nav-sidebar__item nav-sidebar__item--level-2" data-component="base.slide-dropdown">
+                    <details>
+                      <summary>
+                        <div class="nav-sidebar__item__link">
+                          Dropdown
+                          <svg class="icon nav-sidebar__icon" role="img">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-down"></use>
+                          </svg> </div>
+                      </summary>
+                      <ul class="nav-sidebar__list nav-sidebar__list--level-3">
+                        <li class="nav-sidebar__item nav-sidebar__item--level-3">
+                          <a href="javascript:void(0)" class="nav-sidebar__item__link">3.Navigationsebene</a>
+                        </li>
+                        <li class="nav-sidebar__item nav-sidebar__item--level-3 nav-sidebar__item--current">
+                          <a href="javascript:void(0)" class="nav-sidebar__item__link">QuietComfort 35 (current)</a>
+                        </li>
+                        <li class="nav-sidebar__item nav-sidebar__item--level-3" data-component="base.slide-dropdown">
+                          <details>
+                            <summary>
+                              <div class="nav-sidebar__item__link">
+                                Dropdown
+                                <svg class="icon nav-sidebar__icon" role="img">
+                                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-down"></use>
+                                </svg> </div>
+                            </summary>
+                            <ul class="nav-sidebar__list nav-sidebar__list--level-4">
+                              <li class="nav-sidebar__item nav-sidebar__item--level-4">
+                                <a href="javascript:void(0)" class="nav-sidebar__item__link">4.Navigationsebene</a>
+                              </li>
+                              <li class="nav-sidebar__item nav-sidebar__item--level-4">
+                                <a href="javascript:void(0)" class="nav-sidebar__item__link">Native Union Key USB Cable</a>
+                              </li>
+                              <li class="nav-sidebar__item nav-sidebar__item--level-4">
+                                <a href="javascript:void(0)" class="nav-sidebar__item__link">Grind Wireless Headphones</a>
+                              </li>
+                              <li class="nav-sidebar__item nav-sidebar__item--level-4" data-component="base.slide-dropdown">
+                                <details>
+                                  <summary>
+                                    <div class="nav-sidebar__item__link">
+                                      Dropdown
+                                      <svg class="icon nav-sidebar__icon" role="img">
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-down"></use>
+                                      </svg> </div>
+                                  </summary>
+                                  <ul class="nav-sidebar__list nav-sidebar__list--level-5">
+                                    <li class="nav-sidebar__item nav-sidebar__item--level-5">
+                                      <a href="javascript:void(0)" class="nav-sidebar__item__link">5.Navigationsebene</a>
+                                    </li>
+                                    <li class="nav-sidebar__item nav-sidebar__item--level-5">
+                                      <a href="javascript:void(0)" class="nav-sidebar__item__link">QuietComfort 35</a>
+                                    </li>
+                                    <li class="nav-sidebar__item nav-sidebar__item--level-5">
+                                      <a href="javascript:void(0)" class="nav-sidebar__item__link">Twelve South HiRise</a>
+                                    </li>
+                                  </ul>
+                                </details>
+                              </li>
+                            </ul>
+                          </details>
+                        </li>
+                      </ul>
+                    </details>
+                  </li>
+                  <li class="nav-sidebar__item nav-sidebar__item--level-2">
+                    <a href="javascript:void(0)" class="nav-sidebar__item__link">hure Motiv MV5 USB Microphone132</a>
+                  </li>
+                  <li class="nav-sidebar__item nav-sidebar__item--level-2">
+                    <a href="javascript:void(0)" class="nav-sidebar__item__link">Native Union Key USB Cable</a>
+                  </li>
+                  <li class="nav-sidebar__item nav-sidebar__item--level-2">
+                    <a href="javascript:void(0)" class="nav-sidebar__item__link">Grind Wireless Headphones</a>
+                  </li>
+                  <li class="nav-sidebar__item nav-sidebar__item--level-2">
+                    <a href="javascript:void(0)" class="nav-sidebar__item__link">Skull Headphones</a>
+                  </li>
+                </ul>
+              </details>
+            </li>
+            <li class="nav-sidebar__item nav-sidebar__item--level-1">
+              <a href="javascript:void(0)" class="nav-sidebar__item__link">Contribute</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>  <div class="page-wrap__content">
+    <div class="sidebar-overlay" tabindex="0"></div>
+    <header class="main-header main-header-sidebar" itemscope id="microdata-org" itemprop="publisher author" itemtype="http://schema.org/Organization" itemref="microdata-org-address microdata-org-social">
+        <div class="main-header__logo-nav">
+        <div class="logo-main-wrap">
+            <meta itemprop="name" content="25SheepStreet" />
+            <a href="index.html" class="logo-main" itemprop="url" title="Startseite">
+            <img src="/images/logo.svg" alt="Startseite" itemprop="logo" width="230" height="33">
+            </a>
+        </div>
+        <div class="nav-meta-container">
+        </div>
+        </div>
+    </header>    <div class="main-header-sidebar-spacer"></div>
+    <main class="content-wrap" id="content" tabindex="-1">
+      <div class="l-main-wrap">
+        <h1>Just a test page</h1>
+
+<div class="anchor-target" id="c">
+    <div class="l-section">
+      <div class="l-main-wrap l-main-wrap--narrow">
+        <div class="l-container">
+          <header class="content-headline  ">
+            <h2> Highlight-Text (Center) </h2>
+            <p class="content-headline__subheader">
+              Subheader Highlight-Text
+            </p>
+          </header>
+        </div>
+        <div class="l-container">
+          <div class="highlight-text-wrap highlight-text-wrap--align_center">
+            <div class="highlight-text">
+              <div class="highlight-text__item">
+                <div class="highlight-text__item__text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum dignissimos cum perferendis est reprehenderit impedit maiores nulla, expedita ut numquam? Tempore eaque accusantium, ab, mollitia maxime quibusdam numquam officiis illo.</p>
+                </div>
+                <a href="javascript:void(0)" class="button button--outline">Button</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="textpic textpic--right textpic--intext">
+  <div class="gallery" data-columns="1" data-images="1">
+    <div class="gallery__row">
+      <div class="gallery__column">
+<div class="anchor-target" id="c">
+  <div class="l-section" style="width:50%">
+    <div class="l-main-wrap l-main-wrap--narrow">
+      <div class="l-container">
+        <div class="slider  content-slider" data-component="base.slider">
+          <div class="slider-main" data-slider-arrows="outer">
+            <div class="slider__track">
+              <div class="slider__slides">
+                <div class="slider__slide">
+                  <div class="content-slide" data-title="Slider 1">
+                    <div class="content-slide__image">
+                      <img data-src="/images/dummy/1-1-xs.png" alt="" class="lazyload "> </div>
+                    <div class="content-slide__text">
+                      <div class="content-slide__topic">
+                        Lorem Ipsum
+                      </div>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia alias labore soluta harum! Illum sequi perferendis ex, quos eos at!</p>
+                      <a href="javascript:void(0)" class="button">Button </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider__slide">
+                  <div class="content-slide" data-title="Ohne Bild">
+                    <div class="content-slide__text">
+                      <div class="content-slide__topic">
+                        Lorem Ipsum
+                      </div>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia alias labore soluta harum! Illum sequi perferendis ex, quos eos at!</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia alias labore soluta harum! Illum sequi perferendis ex, quos eos at!</p>
+                      <a href="javascript:void(0)" class="button">Button </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider__slide">
+                  <div class="content-slide" data-title="Slider Lorem Ipsum">
+                    <div class="content-slide__image">
+                      <img data-src="/images/dummy/1-1-xs.png" alt="" class="lazyload "> </div>
+                    <div class="content-slide__text">
+                      <div class="content-slide__topic">
+                        Lorem Ipsum
+                      </div>
+                      <p>Lorem ipsum dolor sit amet</p>
+                      <a href="javascript:void(0)" class="button">Button </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider__slide">
+                  <div class="content-slide" data-title="Slider 1">
+                    <div class="content-slide__image">
+                      <img data-src="/images/dummy/1-1-xs.png" alt="" class="lazyload "> </div>
+                    <div class="content-slide__text">
+                      <div class="content-slide__topic">
+                        Lorem Ipsum
+                      </div>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia alias labore soluta harum! Illum sequi perferendis ex, quos eos at!</p>
+                      <a href="javascript:void(0)" class="button">Button </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider__slide">
+                  <div class="content-slide" data-title="Ohne Bild">
+                    <div class="content-slide__text">
+                      <div class="content-slide__topic">
+                        Lorem Ipsum
+                      </div>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia alias labore soluta harum! Illum sequi perferendis ex, quos eos at!</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia alias labore soluta harum! Illum sequi perferendis ex, quos eos at!</p>
+                      <a href="javascript:void(0)" class="button">Button </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider__slide">
+                  <div class="content-slide" data-title="Slider Lorem Ipsum">
+                    <div class="content-slide__image">
+                      <img data-src="/images/dummy/1-1-xs.png" alt="" class="lazyload "> </div>
+                    <div class="content-slide__text">
+                      <div class="content-slide__topic">
+                        Lorem Ipsum
+                      </div>
+                      <p>Lorem ipsum dolor sit amet</p>
+                      <a href="javascript:void(0)" class="button">Button </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider__slide">
+                  <div class="content-slide" data-title="Slider 1">
+                    <div class="content-slide__image">
+                      <img data-src="/images/dummy/1-1-xs.png" alt="" class="lazyload "> </div>
+                    <div class="content-slide__text">
+                      <div class="content-slide__topic">
+                        Lorem Ipsum
+                      </div>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia alias labore soluta harum! Illum sequi perferendis ex, quos eos at!</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia alias labore soluta harum! Illum sequi perferendis ex, quos eos at!</p>
+                      <a href="javascript:void(0)" class="button">Button </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slider-nav">
+              <div class="slider__track">
+                <div class="slider__slides slider-nav__slides" data-glide-el="controls[nav]">
+                  <button class="slider-nav__slide" data-glide-dir="=0">
+                    <div class="content-slide--preview">Slider 1</div>
+                    <div class="slider__bullet"></div>
+                  </button>
+                  <button class="slider-nav__slide" data-glide-dir="=1">
+                    <div class="content-slide--preview">Ohne Bild</div>
+                    <div class="slider__bullet"></div>
+                  </button>
+                  <button class="slider-nav__slide" data-glide-dir="=2">
+                    <div class="content-slide--preview">Slider Lorem Ipsum</div>
+                    <div class="slider__bullet"></div>
+                  </button>
+                  <button class="slider-nav__slide" data-glide-dir="=3">
+                    <div class="content-slide--preview">Slider 1</div>
+                    <div class="slider__bullet"></div>
+                  </button>
+                  <button class="slider-nav__slide" data-glide-dir="=4">
+                    <div class="content-slide--preview">Ohne Bild</div>
+                    <div class="slider__bullet"></div>
+                  </button>
+                  <button class="slider-nav__slide" data-glide-dir="=5">
+                    <div class="content-slide--preview">Slider Lorem Ipsum</div>
+                    <div class="slider__bullet"></div>
+                  </button>
+                  <button class="slider-nav__slide" data-glide-dir="=6">
+                    <div class="content-slide--preview">Slider 1</div>
+                    <div class="slider__bullet"></div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="bodytext">
+    <p>
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+      At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+      sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+      Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+      ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+      ipsum dolor sit amet. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et
+      accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet,
+    </p>
+  </div>
+</div>
+      </div>
+    </main>
+    <footer class="main-footer">
+        <div class="l-main-wrap">
+    
+            <div class="main-footer__top">
+            <address class="main-footer__address" itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress" id="microdata-org-address">
+                <p>
+                <a href="tel:00492211234560" title="Unsere Telefon-Nummer" itemprop="telephone" content="00492211234560" class="main-footer__tel">+49 (0)221 12 34 56-0</a><br>
+                <a href="javascript:void(0)" title="info@qtrado.de" itemprop="email">info@REPLACE_PROJECTKEY.com</a>
+                </p>
+                <span itemprop="streetAddress">Hauptstrasse 16</span><br>
+                <span itemprop="postalCode">50987</span>&nbsp;
+                <span itemprop="addressLocality">Hauptstadt</span><br>
+                <span itemprop="addressCountry">Deutschland</span>
+            </address>
+    
+            <nav class="nav-footer" aria-label="Rechtliches">
+                <ul class="nav-footer__list">
+                <li class="nav-footer__list__item">
+                    <a href="javascript:void(0)">Kontakt</a>
+                </li>
+                <li class="nav-footer__list__item">
+                    <a href="javascript:void(0)">Impressum</a>
+                </li>
+                <li class="nav-footer__list__item">
+                    <a href="javascript:void(0)">Datenschutz</a>
+                </li>
+                <li class="nav-footer__list__item">
+                    <a href="/sitemap.html">Sitemap</a>
+                </li>
+                </ul>
+            </nav>
+            </div>
+    
+            <div class="main-footer__bottom">
+            <nav class="nav-social" aria-label="Unsere Profile in sozialen Netzwerken">
+                <ul class="nav-social__list" id="microdata-org-social">
+                <li class="nav-social__list__item">
+                    <a href="javascript:void(0)" title="Unsere Facebook-Seite" itemprop="sameAs">
+                    <svg class="icon " role="img">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-facebook"></use>
+                    </svg>            </a>
+                </li>
+                <li class="nav-social__list__item">
+                    <a href="javascript:void(0)" title="Unsere Instagram-Seite" itemprop="sameAs">
+                    <svg class="icon " role="img">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-instagram"></use>
+                    </svg>            </a>
+                </li>
+                <li class="nav-social__list__item">
+                    <a href="javascript:void(0)" title="Unser Twitter-Profil" itemprop="sameAs">
+                    <svg class="icon " role="img">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use>
+                    </svg>            </a>
+                </li>
+                <li class="nav-social__list__item">
+                    <a href="javascript:void(0)" title="Unser Youtube-Profil" itemprop="sameAs">
+                    <svg class="icon " role="img">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-youtube"></use>
+                    </svg>            </a>
+                </li>
+                <li class="nav-social__list__item">
+                    <a href="javascript:void(0)" title="Unser xing-Profil" itemprop="sameAs">
+                    <svg class="icon " role="img">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-xing"></use>
+                    </svg>            </a>
+                </li>
+                <li class="nav-social__list__item">
+                    <a href="javascript:void(0)" title="Unser linkedin-Profil" itemprop="sameAs">
+                    <svg class="icon " role="img">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-linkedin"></use>
+                    </svg>            </a>
+                </li>
+                </ul>
+            </nav>
+            </div>
+    
+        </div>
+    </footer>  </div>
+</div>
+
+<script>
+  window.addEventListener('DOMContentLoaded', function () {
+    window.cookieconsent.initialise({
+      showLink: 1,
+      content: {
+        message: 'Wenn Sie unsere Website nutzen, stimmen Sie der Nutzung und Speicherung von Cookies auf Ihrem Endgerät zu.',
+        dismiss: 'Ok',
+        link: 'Weitere Informationen finden Sie in unserer Cookie-Richtlinie.',
+        href: '/'
+      }
+    });
+  });
+</script>
+<div class="env-flag env-flag--local" onclick="javascript:this.parentElement.removeChild(this);"></div>
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="pswp__caption" data-component="base.lightbox">
+
+    <!-- Background of PhotoSwipe.
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides.
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container" id="pswp__container" aria-live="polite" aria-labelledby="pswp__counter pswp__caption">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter" id="pswp__counter" aria-live="polite"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader-active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" id="pswp__button--arrow--left" title="Previous (arrow left)" aria-controls="pswp__container pswp__caption">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" id="pswp__button--arrow--right" title="Next (arrow right)" aria-controls="pswp__container pswp__caption">
+            </button>
+
+            <div class="pswp__caption" id="pswp__caption" aria-live="polite">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+  <!-- Root element of PhotoSwipe. Must have class pswp. -->
+  <div class="pswp" tabindex="-1" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="pswp__caption" data-component="base.lightbox">
+  
+      <!-- Background of PhotoSwipe.
+           It's a separate element as animating opacity is faster than rgba(). -->
+      <div class="pswp__bg"></div>
+  
+      <!-- Slides wrapper with overflow:hidden. -->
+      <div class="pswp__scroll-wrap">
+  
+          <!-- Container that holds slides.
+              PhotoSwipe keeps only 3 of them in the DOM to save memory.
+              Don't modify these 3 pswp__item elements, data is added later on. -->
+          <div class="pswp__container" id="pswp__container" aria-live="polite" aria-labelledby="pswp__counter pswp__caption">
+              <div class="pswp__item"></div>
+              <div class="pswp__item"></div>
+              <div class="pswp__item"></div>
+          </div>
+  
+          <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+          <div class="pswp__ui pswp__ui--hidden">
+  
+              <div class="pswp__top-bar">
+  
+                  <!--  Controls are self-explanatory. Order can be changed. -->
+  
+                  <div class="pswp__counter" id="pswp__counter" aria-live="polite"></div>
+  
+                  <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+  
+                  <button class="pswp__button pswp__button--share" title="Share"></button>
+  
+                  <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+  
+                  <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+  
+                  <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                  <!-- element will get class pswp__preloader-active when preloader is running -->
+                  <div class="pswp__preloader">
+                      <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                          <div class="pswp__preloader__donut"></div>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+  
+              <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                  <div class="pswp__share-tooltip"></div>
+              </div>
+  
+              <button class="pswp__button pswp__button--arrow--left" id="pswp__button--arrow--left" title="Previous (arrow left)" aria-controls="pswp__container pswp__caption">
+              </button>
+  
+              <button class="pswp__button pswp__button--arrow--right" id="pswp__button--arrow--right" title="Next (arrow right)" aria-controls="pswp__container pswp__caption">
+              </button>
+  
+              <div class="pswp__caption" id="pswp__caption" aria-live="polite">
+                  <div class="pswp__caption__center"></div>
+              </div>
+  
+          </div>
+  
+      </div>
+  
+  </div>
+  <script type="text/json" id="pl-pattern-data-footer" class="pl-js-pattern-data">
+  {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"templates-content","lineagePath":"../../patterns/4-templates-base-base-content/4-templates-base-base-content.rendered.html"}],"lineage":[{"lineagePattern":"templates-content","lineagePath":"../../patterns/4-templates-base-base-content/4-templates-base-base-content.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"pages","patternSubtype":"startpage"},"patternExtension":"hbs","patternName":"Startpage","patternPartial":"pages-startpage","patternState":"","patternEngineName":"handlebars","extraOutput":{}}
+</script>
+
+<script>
+  window.patternData = {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"templates-content","lineagePath":"../../patterns/4-templates-base-base-content/4-templates-base-base-content.rendered.html"}],"lineage":[{"lineagePattern":"templates-content","lineagePath":"../../patterns/4-templates-base-base-content/4-templates-base-base-content.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"pages","patternSubtype":"startpage"},"patternExtension":"hbs","patternName":"Startpage","patternPartial":"pages-startpage","patternState":"","patternEngineName":"handlebars","extraOutput":{}};
+</script>
+
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+
+  var scriptLoader = {
+
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+
+  }
+</script>
+
+<script src="/js/shared.js?1574105935506" defer></script>
+<script src="/js/base.js?1574105935506" defer></script>
+<script src="/js/download.js?1574105935506" defer></script>
+
+<!-- Netlify Itentity Login: https://www.netlifycms.org/docs/add-to-your-site/ -->
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
+
+</body>
+</html>
