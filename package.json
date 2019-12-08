@@ -4,7 +4,7 @@
   "description": "website for the ruhmesmeile frontend",
   "main": "index.js",
   "scripts": {
-    "build-all": "npm run build && npm run eleventy-build",
+    "build-all": "npm run build && npm run eleventy-build && cp -r public/* _site/",
     "start": "rm-frontend watch",
     "build": "rm-frontend build",
     "eleventy-start": "npx @11ty/eleventy --input=source --output=_site --formats=md,html,hbs --serve",
@@ -18,7 +18,7 @@
   "license": "ISC",
   "private": true,
   "dependencies": {
-    "@rm-frontend-website/instance": "^3.0.1"
+    "@rm-frontend-website/instance": "^3.0.3"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.9.0"

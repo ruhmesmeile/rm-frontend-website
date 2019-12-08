@@ -2,3 +2,12 @@ node_modules
 public
 dependencyGraph.json
 .env
+
+_site/css
+_site/fonts
+_site/images
+_site/js
+_site/patternlab
+_site/server
+_site/webpack-report.html
+
