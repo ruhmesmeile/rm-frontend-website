@@ -1,11 +1,13 @@
 {
-  "name": "@rm-frontend-website/distribution",
+  "name": "@rm-frontend-website/microsite",
   "version": "1.0.0",
   "description": "website for the ruhmesmeile frontend",
   "main": "index.js",
   "scripts": {
     "start": "rm-frontend watch",
-    "build": "rm-frontend build"
+    "build": "rm-frontend build",
+    "eleventy-start": "npx @11ty/eleventy --input=source --output=public --formats=md,html,hbs --serve",
+    "eleventy-build": "npx @11ty/eleventy --input=source --output=public --formats=md,html,hbs"
   },
   "repository": {
     "type": "git",
@@ -15,6 +17,9 @@
   "license": "ISC",
   "private": true,
   "dependencies": {
-    "@rm-frontend-website/instance": "^1.1.1"
+    "@rm-frontend-website/instance": "^3.0.0"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^0.9.0"
   }
 }

@@ -4,9 +4,17 @@ module.exports = require('@rm-frontend-website/instance').extend({
     // compilation target
     public: 'public',
 
+    // patternlab location
+    patternlab: 'patternlab',
+
     // public asset paths (relative to `paths.public`)
-    publicJs: 'path/to/js',
-    publicCss: 'path/to/css',
-    publicFonts: 'path/to/fonts',
+    publicJs: 'js',
+    publicCss: 'css',
+    publicFonts: 'fonts',
   },
+  modules: {
+    '@rm-frontend/base': {
+      sidebar: 'fixed'
+    }
+  }
 });
