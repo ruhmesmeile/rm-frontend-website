@@ -4,7 +4,7 @@
   "description": "website for the ruhmesmeile frontend",
   "main": "index.js",
   "scripts": {
-    "build-all": "npm run build && npm run eleventy-build && cp -r public/* _site/",
+    "build-all": "rm-frontend build && npx @11ty/eleventy --input=source --output=_site --formats=md,html,hbs && cp -r public/* _site/",
     "start": "rm-frontend watch",
     "build": "rm-frontend build",
     "eleventy-start": "npx @11ty/eleventy --input=source --output=_site --formats=md,html,hbs --serve",
