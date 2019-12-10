@@ -3,6 +3,8 @@ const fs = require('fs');
 const globCss = require('glob-fs')({ gitignore: false });
 const globJs = require('glob-fs')({ gitignore: false });
 
+const CleanCSS = require("clean-css");
+
 const cssPath = "source/static/css";
 const jsPath = "source/static/js";
 
@@ -14,7 +16,7 @@ module.exports = function (eleventyConfig) {
       if (cssFile.indexOf('inline') > 0) {
         let fileContent = fs.readFileSync(cssFile, 'UTF-8');
         cssIncludes +=
-          `<style type="text/css">/*<![CDATA[*/<!-- ${fileContent} -->/*]]>*/</style>`;
+          `<style type="text/css">/*<![CDATA[*/<!-- ${new CleanCSS({}).minify(fileContent).styles} -->/*]]>*/</style>`;
       } else {
         cssFile = cssFile.replace(cssPath, "/css");
         cssIncludes +=
@@ -36,7 +38,6 @@ module.exports = function (eleventyConfig) {
 
     return jsIncludes;
   });
-
 
   eleventyConfig.addPassthroughCopy({ "source/admin": "admin" });
 
