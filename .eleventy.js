@@ -34,6 +34,9 @@ module.exports = function (eleventyConfig) {
     return jsIncludes;
   });
 
+
+  eleventyConfig.addPassthroughCopy({ "source/admin": "admin" });
+
   eleventyConfig.addPassthroughCopy({ "source/static/css": "css" });
   eleventyConfig.addPassthroughCopy({ "source/static/js": "js" });
   eleventyConfig.addPassthroughCopy({ "source/static/images": "images" });
