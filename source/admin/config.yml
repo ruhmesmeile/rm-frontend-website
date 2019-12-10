@@ -8,7 +8,7 @@ public_folder: "/images/uploads"
 site_url: https://rm-frontend.ruhmesmeile.rocks
 display_url: https://rm-frontend.ruhmesmeile.rocks
 # TODO use correct URL for our logo here
-logo_url: https://www.taktsoft.com/images/partner/ruhmesmeile-87496265.png
+logo_url: https://rm-frontend.ruhmesmeile.rocks/images/ruhmesmeile-87496265.png
 
 locale: de
 
