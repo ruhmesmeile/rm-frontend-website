@@ -4,11 +4,11 @@
   "description": "website for the ruhmesmeile frontend",
   "main": "index.js",
   "scripts": {
-    "build-all": "rm-frontend build && npx @11ty/eleventy --input=source --output=_site --formats=md,html,hbs && cp -r public/* _site/",
+    "build-all": "rm -rf dist public source/static && rm-frontend build && mkdir -p source/static && cp -r dist/* source/static/ && npx @11ty/eleventy --input=source --output=public --formats=md,html,hbs",
     "start": "rm-frontend watch",
     "build": "rm-frontend build",
-    "eleventy-start": "npx @11ty/eleventy --input=source --output=_site --formats=md,html,hbs --serve",
-    "eleventy-build": "npx @11ty/eleventy --input=source --output=_site --formats=md,html,hbs"
+    "eleventy-start": "npx @11ty/eleventy --input=source --output=public --formats=md,html,hbs --serve",
+    "eleventy-build": "npx @11ty/eleventy --input=source --output=public --formats=md,html,hbs"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,8 @@
     "@rm-frontend-website/instance": "^3.0.3"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^0.9.0"
+    "@11ty/eleventy": "^0.9.0",
+    "@mightyplow/eleventy-plugin-cache-buster": "^1.1.3",
+    "glob-fs": "^0.1.7"
   }
 }

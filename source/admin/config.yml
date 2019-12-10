@@ -2,17 +2,22 @@ backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
 
-publish_mode: editorial_workflow
-
-media_folder: "images/uploads"
+media_folder: "source/images/uploads"
 public_folder: "/images/uploads"
+
+site_url: https://rm-frontend.ruhmesmeile.rocks
+display_url: https://rm-frontend.ruhmesmeile.rocks
+# TODO use correct URL for our logo here
+logo_url: https://www.taktsoft.com/images/partner/ruhmesmeile-87496265.png
+
+locale: de
 
 collections:
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
     label: "Blog" # Used in the UI
-    folder: "_posts/blog" # The path to the folder where the documents are stored
+    folder: "source/posts/blog" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: "blog/{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
       - {label: "Title", name: "title", widget: "string"}

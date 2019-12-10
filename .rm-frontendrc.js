@@ -2,7 +2,7 @@ module.exports = require('@rm-frontend-website/instance').extend({
   // all paths are relative to this file, if not specified otherwise
   paths: {
     // compilation target
-    public: 'public',
+    public: 'dist',
 
     // patternlab location
     patternlab: 'patternlab',

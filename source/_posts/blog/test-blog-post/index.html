@@ -172,18 +172,244 @@
 </nav>
 
 <div class="page-wrap">
-  {{> sidebar }}
-  <div class="page-wrap__content">
+  <button type="button" class="nav-toggle nav-sidebar-toggle" id="toggle-sidebar" aria-controls="sidebar" aria-expanded="false" data-component="base.sidebar-toggle">
+      <span class="nav-toggle__label">Navigation öffnen/schließen</span>
+      <div class="nav-toggle__icon">
+        <div class="nav-toggle__icon__middle"></div>
+      </div>
+    </button>
+    <div id="sidebar" class="page-wrap__sidebar" data-component="base.sidebar">
+      <div class="page-wrap__sidebar__content" id="sidebar-content">
+        <div class="logo-main-wrap">
+          <meta itemprop="name" content="25SheepStreet" />
+          <a href="index.html" class="logo-main" itemprop="url" title="Startseite">
+            <img src="/images/logo-dark.svg" alt="Startseite" itemprop="logo" width="230" height="33">
+          </a>
+        </div>
+  
+        <nav class="nav-sidebar" id="nav-sidebar" aria-label="Hauptnavigation" data-component="base.nav-sidebar">
+          <ul class="nav-sidebar__list nav-sidebar__list--level-1">
+            <li class="nav-sidebar__item nav-sidebar__item--level-1">
+              <a href="javascript:void(0)" class="nav-sidebar__item__link">Getting started</a>
+            </li>
+            <li class="nav-sidebar__item nav-sidebar__item--level-1" data-component="base.slide-dropdown">
+              <details>
+                <summary>
+                  <div class="nav-sidebar__item__link">
+                    Konzepte
+                    <svg class="icon nav-sidebar__icon" role="img">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-down"></use>
+                    </svg> </div>
+                </summary>
+                <ul class="nav-sidebar__list nav-sidebar__list--level-2">
+                  <li class="nav-sidebar__item nav-sidebar__item--level-2">
+                    <a href="javascript:void(0)" class="nav-sidebar__item__link">Struktur</a>
+                  </li>
+                  <li class="nav-sidebar__item nav-sidebar__item--level-2" data-component="base.slide-dropdown">
+                    <details>
+                      <summary>
+                        <div class="nav-sidebar__item__link">
+                          Twelve South Lorem ipsum Lorem lorem lorem
+                          <svg class="icon nav-sidebar__icon" role="img">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-down"></use>
+                          </svg> </div>
+                      </summary>
+                      <ul class="nav-sidebar__list nav-sidebar__list--level-3">
+                        <li class="nav-sidebar__item nav-sidebar__item--level-3">
+                          <a href="javascript:void(0)" class="nav-sidebar__item__link">3.Navigationsebene</a>
+                        </li>
+                        <li class="nav-sidebar__item nav-sidebar__item--level-3">
+                          <a href="javascript:void(0)" class="nav-sidebar__item__link">QuietComfort 35</a>
+                        </li>
+                        <li class="nav-sidebar__item nav-sidebar__item--level-3">
+                          <a href="javascript:void(0)" class="nav-sidebar__item__link">Twelve South HiRise</a>
+                        </li>
+                      </ul>
+                    </details>
+                  </li>
+                  <li class="nav-sidebar__item nav-sidebar__item--level-2" data-component="base.slide-dropdown">
+                    <details>
+                      <summary>
+                        <div class="nav-sidebar__item__link">
+                          Dropdown
+                          <svg class="icon nav-sidebar__icon" role="img">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-down"></use>
+                          </svg> </div>
+                      </summary>
+                      <ul class="nav-sidebar__list nav-sidebar__list--level-3">
+                        <li class="nav-sidebar__item nav-sidebar__item--level-3">
+                          <a href="javascript:void(0)" class="nav-sidebar__item__link">3.Navigationsebene</a>
+                        </li>
+                        <li class="nav-sidebar__item nav-sidebar__item--level-3 nav-sidebar__item--current">
+                          <a href="javascript:void(0)" class="nav-sidebar__item__link">QuietComfort 35 (current)</a>
+                        </li>
+                        <li class="nav-sidebar__item nav-sidebar__item--level-3" data-component="base.slide-dropdown">
+                          <details>
+                            <summary>
+                              <div class="nav-sidebar__item__link">
+                                Dropdown
+                                <svg class="icon nav-sidebar__icon" role="img">
+                                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-down"></use>
+                                </svg> </div>
+                            </summary>
+                            <ul class="nav-sidebar__list nav-sidebar__list--level-4">
+                              <li class="nav-sidebar__item nav-sidebar__item--level-4">
+                                <a href="javascript:void(0)" class="nav-sidebar__item__link">4.Navigationsebene</a>
+                              </li>
+                              <li class="nav-sidebar__item nav-sidebar__item--level-4">
+                                <a href="javascript:void(0)" class="nav-sidebar__item__link">Native Union Key USB Cable</a>
+                              </li>
+                              <li class="nav-sidebar__item nav-sidebar__item--level-4">
+                                <a href="javascript:void(0)" class="nav-sidebar__item__link">Grind Wireless Headphones</a>
+                              </li>
+                              <li class="nav-sidebar__item nav-sidebar__item--level-4" data-component="base.slide-dropdown">
+                                <details>
+                                  <summary>
+                                    <div class="nav-sidebar__item__link">
+                                      Dropdown
+                                      <svg class="icon nav-sidebar__icon" role="img">
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-down"></use>
+                                      </svg> </div>
+                                  </summary>
+                                  <ul class="nav-sidebar__list nav-sidebar__list--level-5">
+                                    <li class="nav-sidebar__item nav-sidebar__item--level-5">
+                                      <a href="javascript:void(0)" class="nav-sidebar__item__link">5.Navigationsebene</a>
+                                    </li>
+                                    <li class="nav-sidebar__item nav-sidebar__item--level-5">
+                                      <a href="javascript:void(0)" class="nav-sidebar__item__link">QuietComfort 35</a>
+                                    </li>
+                                    <li class="nav-sidebar__item nav-sidebar__item--level-5">
+                                      <a href="javascript:void(0)" class="nav-sidebar__item__link">Twelve South HiRise</a>
+                                    </li>
+                                  </ul>
+                                </details>
+                              </li>
+                            </ul>
+                          </details>
+                        </li>
+                      </ul>
+                    </details>
+                  </li>
+                  <li class="nav-sidebar__item nav-sidebar__item--level-2">
+                    <a href="javascript:void(0)" class="nav-sidebar__item__link">hure Motiv MV5 USB Microphone132</a>
+                  </li>
+                  <li class="nav-sidebar__item nav-sidebar__item--level-2">
+                    <a href="javascript:void(0)" class="nav-sidebar__item__link">Native Union Key USB Cable</a>
+                  </li>
+                  <li class="nav-sidebar__item nav-sidebar__item--level-2">
+                    <a href="javascript:void(0)" class="nav-sidebar__item__link">Grind Wireless Headphones</a>
+                  </li>
+                  <li class="nav-sidebar__item nav-sidebar__item--level-2">
+                    <a href="javascript:void(0)" class="nav-sidebar__item__link">Skull Headphones</a>
+                  </li>
+                </ul>
+              </details>
+            </li>
+            <li class="nav-sidebar__item nav-sidebar__item--level-1">
+              <a href="javascript:void(0)" class="nav-sidebar__item__link">Contribute</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>  <div class="page-wrap__content">
     <div class="sidebar-overlay" tabindex="0"></div>
-    {{> header }}
-    <div class="main-header-sidebar-spacer"></div>
+    <header class="main-header main-header-sidebar" itemscope id="microdata-org" itemprop="publisher author" itemtype="http://schema.org/Organization" itemref="microdata-org-address microdata-org-social">
+        <div class="main-header__logo-nav">
+        <div class="logo-main-wrap">
+            <meta itemprop="name" content="25SheepStreet" />
+            <a href="index.html" class="logo-main" itemprop="url" title="Startseite">
+            <img src="/images/logo.svg" alt="Startseite" itemprop="logo" width="230" height="33">
+            </a>
+        </div>
+        <div class="nav-meta-container">
+        </div>
+        </div>
+    </header>    <div class="main-header-sidebar-spacer"></div>
     <main class="content-wrap" id="content" tabindex="-1">
       <div class="l-main-wrap">
-        {{{ content }}}
+        <p>This is a test post.</p>
+<p>With some <strong>formatting</strong>.</p>
+
       </div>
     </main>
-    {{> footer }}
-  </div>
+    <footer class="main-footer">
+        <div class="l-main-wrap">
+    
+            <div class="main-footer__top">
+            <address class="main-footer__address" itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress" id="microdata-org-address">
+                <p>
+                <a href="tel:00492211234560" title="Unsere Telefon-Nummer" itemprop="telephone" content="00492211234560" class="main-footer__tel">+49 (0)221 12 34 56-0</a><br>
+                <a href="javascript:void(0)" title="info@qtrado.de" itemprop="email">info@REPLACE_PROJECTKEY.com</a>
+                </p>
+                <span itemprop="streetAddress">Hauptstrasse 16</span><br>
+                <span itemprop="postalCode">50987</span>&nbsp;
+                <span itemprop="addressLocality">Hauptstadt</span><br>
+                <span itemprop="addressCountry">Deutschland</span>
+            </address>
+    
+            <nav class="nav-footer" aria-label="Rechtliches">
+                <ul class="nav-footer__list">
+                <li class="nav-footer__list__item">
+                    <a href="javascript:void(0)">Kontakt</a>
+                </li>
+                <li class="nav-footer__list__item">
+                    <a href="javascript:void(0)">Impressum</a>
+                </li>
+                <li class="nav-footer__list__item">
+                    <a href="javascript:void(0)">Datenschutz</a>
+                </li>
+                <li class="nav-footer__list__item">
+                    <a href="/sitemap.html">Sitemap</a>
+                </li>
+                </ul>
+            </nav>
+            </div>
+    
+            <div class="main-footer__bottom">
+            <nav class="nav-social" aria-label="Unsere Profile in sozialen Netzwerken">
+                <ul class="nav-social__list" id="microdata-org-social">
+                <li class="nav-social__list__item">
+                    <a href="javascript:void(0)" title="Unsere Facebook-Seite" itemprop="sameAs">
+                    <svg class="icon " role="img">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-facebook"></use>
+                    </svg>            </a>
+                </li>
+                <li class="nav-social__list__item">
+                    <a href="javascript:void(0)" title="Unsere Instagram-Seite" itemprop="sameAs">
+                    <svg class="icon " role="img">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-instagram"></use>
+                    </svg>            </a>
+                </li>
+                <li class="nav-social__list__item">
+                    <a href="javascript:void(0)" title="Unser Twitter-Profil" itemprop="sameAs">
+                    <svg class="icon " role="img">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use>
+                    </svg>            </a>
+                </li>
+                <li class="nav-social__list__item">
+                    <a href="javascript:void(0)" title="Unser Youtube-Profil" itemprop="sameAs">
+                    <svg class="icon " role="img">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-youtube"></use>
+                    </svg>            </a>
+                </li>
+                <li class="nav-social__list__item">
+                    <a href="javascript:void(0)" title="Unser xing-Profil" itemprop="sameAs">
+                    <svg class="icon " role="img">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-xing"></use>
+                    </svg>            </a>
+                </li>
+                <li class="nav-social__list__item">
+                    <a href="javascript:void(0)" title="Unser linkedin-Profil" itemprop="sameAs">
+                    <svg class="icon " role="img">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-linkedin"></use>
+                    </svg>            </a>
+                </li>
+                </ul>
+            </nav>
+            </div>
+    
+        </div>
+    </footer>  </div>
 </div>
 
 <script>
