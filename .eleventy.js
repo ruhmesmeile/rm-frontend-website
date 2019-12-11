@@ -1,8 +1,5 @@
 const fs = require('fs');
-
-const globCss = require('glob-fs')({ gitignore: false });
-const globJs = require('glob-fs')({ gitignore: false });
-
+const glob = require('glob');
 const CleanCSS = require("clean-css");
 
 const cssPath = "source/static/css";
@@ -12,7 +9,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("cssIncludes", function () {
     let cssIncludes = "";
 
-    globCss.readdirSync(`${cssPath}/*.css`).forEach(function (cssFile) {
+    glob.sync(`${cssPath}/*.css`).forEach(function (cssFile) {
       if (cssFile.indexOf('inline') > 0) {
         let fileContent = fs.readFileSync(cssFile, 'UTF-8');
         cssIncludes +=
@@ -31,7 +28,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("jsIncludes", function () {
     let jsIncludes = "";
 
-    globJs.readdirSync(`${jsPath}/*.js`).forEach(function (jsFile) {
+    glob.sync(`${jsPath}/*.js`).forEach(function (jsFile) {
       jsFile = jsFile.replace(jsPath, "/js");
       jsIncludes += `<script src="${jsFile}" defer></script>`;
     });
