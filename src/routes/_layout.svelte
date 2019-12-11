@@ -4,19 +4,20 @@
 	export let segment;
 </script>
 
-<style>
-	main {
-		position: relative;
-		max-width: 56em;
-		background-color: white;
-		padding: 2em;
-		margin: 0 auto;
-		box-sizing: border-box;
-	}
-</style>
+<style></style>
+
+<svelte:head>
+
+</svelte:head>
 
 <Nav {segment}/>
 
-<main>
-	<slot></slot>
-</main>
+<div class="page-wrap__content">
+	<div class="sidebar-overlay" tabindex="0"></div>
+	<div class="main-header-sidebar-spacer"></div>
+	<main class="content-wrap" id="content" tabindex="-1">
+		<div class="l-main-wrap">
+			<slot></slot>
+		</div>
+	</main>
+</div>

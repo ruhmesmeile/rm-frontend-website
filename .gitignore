@@ -11,3 +11,11 @@ source/static
 yarn-error.log
 /cypress/screenshots/
 /__sapper__/
+
+static/css
+static/fonts
+static/images
+static/js
+static/patternlab
+static/server
+static/webpack-report.html
