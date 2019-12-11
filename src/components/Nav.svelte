@@ -38,7 +38,7 @@
           <li class="nav-sidebar__item nav-sidebar__item--level-1">
             <a href="about" class="nav-sidebar__item__link">About</a>
           </li>
-		  <li class="nav-sidebar__item nav-sidebar__item--level-1">
+		      <li class="nav-sidebar__item nav-sidebar__item--level-1">
             <a rel=prefetch href="blog" class="nav-sidebar__item__link">Blog</a>
           </li>
         </ul>
