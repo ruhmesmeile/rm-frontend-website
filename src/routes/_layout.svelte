@@ -18,7 +18,7 @@
     <div class="main-header__logo-nav">
       <div class="logo-main-wrap">
         <meta itemprop="name" content="25SheepStreet" />
-        <a href="index.html" class="logo-main" itemprop="url" title="Startseite">
+        <a href="/" class="logo-main" itemprop="url" title="Startseite">
           <img src="/images/logo.svg" alt="Startseite" itemprop="logo" width="230" height="33">
         </a>
       </div>
