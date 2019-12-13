@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build-all": "rm -rf dist public source/static && rm-frontend build && mkdir -p source/static && cp -r dist/* source/static/ && npx @11ty/eleventy --input=source --output=public --formats=md,html,hbs",
-    "build-sapper": "rm -rf public && NODE_ENV=development rm-frontend build && cp -r dist/* static/ && NODE_ENV=production npm run export && cp -r __sapper__/export public && cp -r source/images public && rm -rf static/css && rm -rf static/fonts && rm -rf static/images && rm -rf static/js && rm -rf static/patternlab && rm -rf static/server && rm static/webpack-report.html",
+    "build-sapper": "rm -rf public && NODE_ENV=development rm-frontend build && cp -r dist/* static/ && cp -r source/images/* static/images/ && NODE_ENV=production npm run export && cp -r __sapper__/export public && rm -rf static/css && rm -rf static/fonts && rm -rf static/images && rm -rf static/js && rm -rf static/patternlab && rm -rf static/server && rm static/webpack-report.html",
     "pre-sapper": "NODE_ENV=development npm run frontend-build && cp -r dist/* static && cp -r source/images static/",
     "frontend-start": "rm-frontend watch",
     "frontend-build": "rm-frontend build",
