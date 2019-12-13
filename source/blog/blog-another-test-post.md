@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Another test post
+title: Another test post (altered)
 date: 2019-12-11T13:25:49.675Z
 thumbnail: /images/uploads/bioland_logo_2012.svg
 rating: 2
