@@ -82,12 +82,24 @@ collections:
             default: true
           - label: Box-alignment
             name: box-alignment
-            widget: string
+            widget: select
             default: keyvisual__content--center
+            options:
+              - keyvisual__content--center
+              - visual-content--center
+              - visual-content--left visual-content--indent
+              - visual-content--right visual-content--indent
+              - visual-content--right
+              - visual-content--center visual-content--bottom
+              - visual-content--center visual-content--top
           - label: Box-style
             name: box-style
-            widget: string
+            widget: select
             default: ''
+            options:
+              - keyvisual__box--light
+              - keyvisual__box--transparent_text_dark
+              - keyvisual__box--transparent
           - label: Headline
             name: headline
             widget: string
@@ -98,8 +110,11 @@ collections:
             default: ''
           - label: Link-variant
             name: link-variant
-            widget: string
+            widget: select
             default: button--outline_inverted
+            options:
+              - button--outline_inverted
+              - button--outline
           - label: Link-text
             name: link-text
             widget: string
