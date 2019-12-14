@@ -36,72 +36,72 @@ collections:
   - name: pages
     label: Pages
     files:
-      file: src/pages/index.md
-      label: Landing Page
-      name: index
-      fields:
-        - label: Template key
-          name: templateKey
-          widget: hidden
-          default: index-page
-        - label: Title
-          name: title
-          widget: string
-        - label: Heading
-          name: heading
-          widget: string
-        - label: Description
-          name: description
-          widget: string
-        - label: Keyvisual
-          name: keyvisual.schema.json
-          widget: object
-          fields:
-            - label: Small
-              name: small
-              widget: boolean
-              default: false
-            - label: Bg-color
-              name: bg-color
-              widget: string
-              default: ''
-            - label: Image-mobile
-              name: image-mobile
-              widget: string
-              default: dummy/64-27-l.png
-            - label: Image-tablet
-              name: image-tablet
-              widget: string
-              default: dummy/64-27-xl.png
-            - label: Image-desktop
-              name: image-desktop
-              widget: string
-              default: dummy/64-27-xxxl.png
-            - label: Box
-              name: box
-              widget: boolean
-              default: true
-            - label: Box-alignment
-              name: box-alignment
-              widget: string
-              default: keyvisual__content--center
-            - label: Box-style
-              name: box-style
-              widget: string
-              default: ''
-            - label: Headline
-              name: headline
-              widget: string
-              default: ''
-            - label: Text
-              name: text
-              widget: boolean
-              default: ''
-            - label: Link-variant
-              name: link-variant
-              widget: string
-              default: button--outline_inverted
-            - label: Link-text
-              name: link-text
-              widget: string
-              default: ''
+      - file: src/pages/index.md
+        label: Landing Page
+        name: index
+        fields:
+          - label: Template key
+            name: templateKey
+            widget: hidden
+            default: index-page
+          - label: Title
+            name: title
+            widget: string
+          - label: Heading
+            name: heading
+            widget: string
+          - label: Description
+            name: description
+            widget: string
+          - label: Keyvisual
+            name: keyvisual.schema.json
+            widget: object
+            fields:
+              - label: Small
+                name: small
+                widget: boolean
+                default: false
+              - label: Bg-color
+                name: bg-color
+                widget: string
+                default: ''
+              - label: Image-mobile
+                name: image-mobile
+                widget: string
+                default: dummy/64-27-l.png
+              - label: Image-tablet
+                name: image-tablet
+                widget: string
+                default: dummy/64-27-xl.png
+              - label: Image-desktop
+                name: image-desktop
+                widget: string
+                default: dummy/64-27-xxxl.png
+              - label: Box
+                name: box
+                widget: boolean
+                default: true
+              - label: Box-alignment
+                name: box-alignment
+                widget: string
+                default: keyvisual__content--center
+              - label: Box-style
+                name: box-style
+                widget: string
+                default: ''
+              - label: Headline
+                name: headline
+                widget: string
+                default: ''
+              - label: Text
+                name: text
+                widget: boolean
+                default: ''
+              - label: Link-variant
+                name: link-variant
+                widget: string
+                default: button--outline_inverted
+              - label: Link-text
+                name: link-text
+                widget: string
+                default: ''
