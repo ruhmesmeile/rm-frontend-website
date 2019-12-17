@@ -49,5 +49,76 @@
 		<div class="l-main-wrap">
 			<slot></slot>
 		</div>
-	</main>
+	</main>  
+  <footer class="main-footer">
+    <div class="l-main-wrap">
+
+        <div class="main-footer__top">
+        <address class="main-footer__address" itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress" id="microdata-org-address">
+            <p>Frontend</p>
+        </address>
+
+        <nav class="nav-footer" aria-label="Rechtliches">
+            <ul class="nav-footer__list">
+            <li class="nav-footer__list__item">
+                <a href="javascript:void(0)">Kontakt</a>
+            </li>
+            <li class="nav-footer__list__item">
+                <a href="javascript:void(0)">Impressum</a>
+            </li>
+            <li class="nav-footer__list__item">
+                <a href="javascript:void(0)">Datenschutz</a>
+            </li>
+            <li class="nav-footer__list__item">
+                <a href="/sitemap.html">Sitemap</a>
+            </li>
+            </ul>
+        </nav>
+        </div>
+
+        <div class="main-footer__bottom">
+        <nav class="nav-social" aria-label="Unsere Profile in sozialen Netzwerken">
+            <ul class="nav-social__list" id="microdata-org-social">
+            <li class="nav-social__list__item">
+                <a href="javascript:void(0)" title="Unsere Facebook-Seite" itemprop="sameAs">
+                <svg class="icon " role="img">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-facebook"></use>
+                </svg>            </a>
+            </li>
+            <li class="nav-social__list__item">
+                <a href="javascript:void(0)" title="Unsere Instagram-Seite" itemprop="sameAs">
+                <svg class="icon " role="img">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-instagram"></use>
+                </svg>            </a>
+            </li>
+            <li class="nav-social__list__item">
+                <a href="javascript:void(0)" title="Unser Twitter-Profil" itemprop="sameAs">
+                <svg class="icon " role="img">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use>
+                </svg>            </a>
+            </li>
+            <li class="nav-social__list__item">
+                <a href="javascript:void(0)" title="Unser Youtube-Profil" itemprop="sameAs">
+                <svg class="icon " role="img">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-youtube"></use>
+                </svg>            </a>
+            </li>
+            <li class="nav-social__list__item">
+                <a href="javascript:void(0)" title="Unser xing-Profil" itemprop="sameAs">
+                <svg class="icon " role="img">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-xing"></use>
+                </svg>            </a>
+            </li>
+            <li class="nav-social__list__item">
+                <a href="javascript:void(0)" title="Unser linkedin-Profil" itemprop="sameAs">
+                <svg class="icon " role="img">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-linkedin"></use>
+                </svg>            </a>
+            </li>
+            </ul>
+        </nav>
+        </div>
+
+    </div>
+</footer>
 </div>

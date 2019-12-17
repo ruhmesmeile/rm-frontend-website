@@ -22,16 +22,15 @@
         the current page has one -->
     %sapper.head%
 
-
     <!-- Sapper generates a <style> tag containing critical CSS
       for the current page. CSS for the rest of the app is
       lazily loaded when it precaches secondary pages -->
     %sapper.styles%
-
-    <link rel="stylesheet" href="/css/base.css" media="print" onload="this.media='all'"/>
-    <noscript><link rel="stylesheet" href="/css/base.css"></noscript>
+    
     <link rel="stylesheet" href="/css/base.inline.css" media="print" onload="this.media='all'"/>
     <noscript><link rel="stylesheet" href="/css/base.inline.css"></noscript>
+    <link rel="stylesheet" href="/css/base.css" media="print" onload="this.media='all'"/>
+    <noscript><link rel="stylesheet" href="/css/base.css"></noscript>
     <link rel="stylesheet" href="/css/download.css" media="print" onload="this.media='all'"/>
     <noscript><link rel="stylesheet" href="/css/download.css"></noscript>
     <link rel="stylesheet" href="/css/download.inline.css" media="print" onload="this.media='all'"/>
@@ -48,7 +47,7 @@
     <noscript><link rel="stylesheet" href="/css/news.css"></noscript>
     <link rel="stylesheet" href="/css/news.inline.css" media="print" onload="this.media='all'"/>
     <noscript><link rel="stylesheet" href="/css/news.inline.css"></noscript>
-    
+  
     <script>
       (function (w) {
         w.rm = w.rm || {};
@@ -187,11 +186,11 @@
   </ul>
 </nav>
 
-<div class="page-wrap">
+<div id='sapper' class="page-wrap">
 	<!-- The application will be rendered inside this element,
        because `src/client.js` references it -->
-	<div id='sapper'>%sapper.html%</div>
-</div>
+       %sapper.html%
+      </div>
 
 <script>
   window.addEventListener('DOMContentLoaded', function () {

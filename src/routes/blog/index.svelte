@@ -3,27 +3,28 @@
 		return this.fetch(`blog.json`).then(r => r.json()).then(posts => {
 			return { posts };
 		});
-	}
-	
+	};
+
+	export function formatDate(dateInput) {
+		let date = new Date(dateInput);
+		let monthNames = [
+			"Januar", "Februar", "März",
+			"April", "Mai", "Juni", "Juli",
+			"August", "September", "Oktober",
+			"November", "Dezember"
+		];
+		let monthIndex = date.getMonth();
+
+		return [
+			("0" + date.getDate()).slice(-2) + '.',
+			monthNames[monthIndex],
+			date.getFullYear()
+		].join(' ');
+	};
 </script>
 
 <script>
 export let posts;
-export function formatDate(dateInput) {
-	let date = new Date(dateInput);
-	let monthNames = [
-    "Januar", "Februar", "März",
-    "April", "Mai", "Juni", "Juli",
-    "August", "September", "Oktober",
-    "November", "Dezember"
-  ];
-	let monthIndex = date.getMonth();
-    return [
-	   ("0" + date.getDate()).slice(-2) + '.',
-	   monthNames[monthIndex],
-       date.getFullYear()
-    ].join(' ');
-}
 
 </script>
 

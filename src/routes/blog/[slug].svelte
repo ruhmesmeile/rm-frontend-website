@@ -14,7 +14,7 @@
 
 <script>
   export let post;
-  //import index, { formatDate } from './index.svelte';
+  import { formatDate } from './index.svelte';
 
 </script>
 
@@ -30,7 +30,7 @@
     <div class="l-container">
       <article class="news news-detail" itemscope="" itemtype="http://schema.org/NewsArticle" itemref="microdata-org">
         <time itemprop="datePublished" datetime="2016-04-13" class="news-detail__date">
-
+			{formatDate(post.date)}
         </time>
         <h1 itemprop="headline">{post.title}</h1>
         <div class="news-detail__image">
@@ -40,14 +40,14 @@
               <img src="{post.thumbnail}" alt="Lorem Ipsum" />
             </a>
             <figcaption class="caption">
-              {@html post.html}
+              <!--{@html post.html}--> Beispiel Bild Text
             </figcaption>
           </figure>
         </div>
         <div itemprop="articleBody">
           <p class="text--teaser">{@html post.html}</p>
           <p>{@html post.html}</p>
-          <p>{@html post.html}</p>
+		  <p>{@html post.html}</p>
         </div>
       </article>
     </div>
