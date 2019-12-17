@@ -116,7 +116,7 @@ collections:
             default: ''
           - label: Box text
             name: text
-            widget: boolean
+            widget: string
             default: ''
           - label: Link variant
             name: link-variant
