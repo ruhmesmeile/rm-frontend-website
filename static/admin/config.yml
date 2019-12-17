@@ -154,8 +154,8 @@ collections:
     label: Settings
     label_singular: Setting
     files:
-      - label: Main navigation
-        name: main-nav
+      - label: Navigation
+        name: navigation
         file: source/settings/navigation.yml
         fields:
           - widget: object
@@ -171,14 +171,13 @@ collections:
                     name: label
                     widget: string
                     required: false
-                  - label: Path
-                    name: path
+                  - label: Page
+                    name: page
                     widget: relation
                     collection: pages
                     searchFields:
                       - title
-                      - slug
-                    valueField: slug
+                    valueField: title
                     displayFields:
                       - title
                     required: false
@@ -201,8 +200,7 @@ collections:
                         collection: pages
                         searchFields:
                           - title
-                          - slug
-                        valueField: slug
+                        valueField: title
                         displayFields:
                           - title
                         required: false
