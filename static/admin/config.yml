@@ -153,27 +153,13 @@ collections:
   - name: settings
     label: Settings
     label_singular: Setting
-    file: source/settings/navigation.yml
-    fields:
-      - widget: object
+    files:
+      - label: Main navigation
+        name: main-nav
+        file: source/settings/navigation.yml
         fields:
-          - label: Links
-            label_singular: Link
-            name: links
-            widget: list
+          - widget: object
             fields:
-              - label: Label
-                name: label
-                widget: string
-                required: false
-              - label: Path
-                name: path
-                widget: string
-                required: false
-              - label: Open In New Window
-                name: newWindow
-                widget: boolean
-                required: false
               - label: Links
                 label_singular: Link
                 name: links
@@ -208,3 +194,20 @@ collections:
                         name: newWindow
                         widget: boolean
                         required: false
+                      - label: Links
+                        label_singular: Link
+                        name: links
+                        widget: list
+                        fields:
+                          - label: Label
+                            name: label
+                            widget: string
+                            required: false
+                          - label: Path
+                            name: path
+                            widget: string
+                            required: false
+                          - label: Open In New Window
+                            name: newWindow
+                            widget: boolean
+                            required: false
