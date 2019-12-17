@@ -1,0 +1,5 @@
+main-nav:
+  links:
+    - label: Test
+      path: ''
+    - label: Keyvisual
