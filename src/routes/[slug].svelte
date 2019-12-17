@@ -14,6 +14,7 @@
 
 <script>
   export let page;
+  import Keyvisual from '../components/Keyvisual.svelte'
 </script>
 
 <style>
@@ -24,4 +25,6 @@
   <title>{page.title}</title>
 </svelte:head>
 
-{JSON.stringify(page)}
+<Keyvisual
+  keyvisual = {page.keyvisual}
+  />
