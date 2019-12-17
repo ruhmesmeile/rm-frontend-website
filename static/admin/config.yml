@@ -66,15 +66,15 @@ collections:
             default: ''
           - label: Image (mobile)
             name: image-mobile
-            widget: string
+            widget: image
             default: dummy/64-27-l.png
           - label: Image (tablet)
             name: image-tablet
-            widget: string
+            widget: image
             default: dummy/64-27-xl.png
           - label: Image (desktop)
             name: image-desktop
-            widget: string
+            widget: image
             default: dummy/64-27-xxxl.png
           - label: Box visible
             name: box
@@ -129,5 +129,9 @@ collections:
                 value: button--outline
           - label: Link text
             name: link-text
+            widget: string
+            default: ''
+          - label: Link target
+            name: link-target
             widget: string
             default: ''
