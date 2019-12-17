@@ -60,62 +60,74 @@ collections:
             name: small
             widget: boolean
             default: false
-          - label: Bg-color
+          - label: Background Color
             name: bg-color
             widget: string
             default: ''
-          - label: Image-mobile
+          - label: Image (mobile)
             name: image-mobile
             widget: string
             default: dummy/64-27-l.png
-          - label: Image-tablet
+          - label: Image (tablet)
             name: image-tablet
             widget: string
             default: dummy/64-27-xl.png
-          - label: Image-desktop
+          - label: Image (desktop)
             name: image-desktop
             widget: string
             default: dummy/64-27-xxxl.png
-          - label: Box
+          - label: Box visible
             name: box
             widget: boolean
             default: true
-          - label: Box-alignment
+          - label: Box Alignment
             name: box-alignment
             widget: select
             default: keyvisual__content--center
             options:
-              - keyvisual__content--center
-              - visual-content--center
-              - visual-content--left visual-content--indent
-              - visual-content--right visual-content--indent
-              - visual-content--right
-              - visual-content--center visual-content--bottom
-              - visual-content--center visual-content--top
-          - label: Box-style
+              - label: Keyvisual center
+                value: keyvisual__content--center
+              - label: Content center
+                value: visual-content--center
+              - label: 'Left, content indent'
+                value: visual-content--left visual-content--indent
+              - label: 'Right, content indent'
+                value: visual-content--right visual-content--indent
+              - label: Right
+                value: visual-content--right
+              - label: Center Bottom
+                value: visual-content--center visual-content--bottom
+              - label: Center Top
+                value: visual-content--center visual-content--top
+          - label: Box style
             name: box-style
             widget: select
             default: ''
             options:
-              - keyvisual__box--light
-              - keyvisual__box--transparent_text_dark
-              - keyvisual__box--transparent
-          - label: Headline
+              - label: Light
+                value: keyvisual__box--light
+              - label: Text Dark
+                value: keyvisual__box--transparent_text_dark
+              - label: Transparent
+                value: keyvisual__box--transparent
+          - label: Box headline
             name: headline
             widget: string
             default: ''
-          - label: Text
+          - label: Box text
             name: text
             widget: boolean
             default: ''
-          - label: Link-variant
+          - label: Link variant
             name: link-variant
             widget: select
             default: button--outline_inverted
             options:
-              - button--outline_inverted
-              - button--outline
-          - label: Link-text
+              - label: Inverted
+                value: button--outline_inverted
+              - label: Normal
+                value: button--outline
+          - label: Link text
             name: link-text
             widget: string
             default: ''
