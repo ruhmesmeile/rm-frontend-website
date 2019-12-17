@@ -1,5 +1,6 @@
 main-nav:
   links:
-    - label: Test
-      path: ''
+    - label: Standard
+      page: Eine Seite ohne Keyvisual
     - label: Keyvisual
+      page: Eine Seite mit Keyvisual
