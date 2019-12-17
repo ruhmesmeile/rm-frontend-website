@@ -159,6 +159,8 @@ collections:
         file: source/settings/navigation.yml
         fields:
           - widget: object
+            label: Main navigation
+            name: main-nav
             fields:
               - label: Links
                 label_singular: Link
