@@ -43,16 +43,20 @@ collections:
     fields:
       - label: Layout
         name: layout
+        description: Layout to use
         widget: hidden
         default: default
       - label: Title
         name: title
+        description: Title of the page
         widget: string
       - label: Heading
         name: heading
+        description: Main headline of the page
         widget: string
       - label: Body
         name: body
+        description: Bodytext for the page
         widget: markdown
       - label: Keyvisual
         name: keyvisual
@@ -151,6 +155,7 @@ collections:
             default: ''
             hint: Link target
   - name: settings
+    description: General settings
     label: Settings
     label_singular: Setting
     files:
@@ -161,18 +166,21 @@ collections:
           - widget: object
             label: Main navigation
             name: main-nav
+            description: Main navigation (sidebar or top)
             fields:
               - label: Links
                 label_singular: Link
                 name: links
+                description: 1st level links
                 widget: list
                 fields:
                   - label: Label
                     name: label
+                    description: Link text
                     widget: string
-                    required: false
                   - label: Page
                     name: page
+                    description: Link any page
                     widget: relation
                     collection: pages
                     searchFields:
@@ -180,22 +188,24 @@ collections:
                     valueField: title
                     displayFields:
                       - title
-                    required: false
                   - label: Open in new window
                     name: new-window
+                    description: Should the link be opened in a new window?
                     widget: boolean
                     required: false
                   - label: Links
                     label_singular: Link
                     name: links
+                    description: 2nd level links
                     widget: list
                     fields:
                       - label: Label
                         name: label
+                        description: Link text
                         widget: string
-                        required: false
                       - label: Path
                         name: path
+                        description: Link any page
                         widget: relation
                         collection: pages
                         searchFields:
@@ -203,8 +213,8 @@ collections:
                         valueField: title
                         displayFields:
                           - title
-                        required: false
                       - label: Open in new window
                         name: new-window
+                        description: Should the link be opened in a new window?
                         widget: boolean
                         required: false
