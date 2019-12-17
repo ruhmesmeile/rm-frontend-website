@@ -135,3 +135,62 @@ collections:
             name: link-target
             widget: string
             default: ''
+  - name: settings
+    label: Settings
+    file: source/data/settings.yml
+    fields:
+      - label: Navigation
+        name: navigation
+        widget: object
+        fields:
+          - label: Links
+            label_singular: Link
+            name: links
+            widget: list
+            fields:
+              - label: Label
+                name: label
+                widget: string
+                required: false
+              - label: Path
+                name: path
+                widget: string
+                required: false
+              - label: Open In New Window
+                name: newWindow
+                widget: boolean
+                required: false
+              - label: Links
+                label_singular: Link
+                name: links
+                widget: list
+                fields:
+                  - label: Label
+                    name: label
+                    widget: string
+                    required: false
+                  - label: Path
+                    name: path
+                    widget: string
+                    required: false
+                  - label: Open In New Window
+                    name: newWindow
+                    widget: boolean
+                    required: false
+                  - label: Links
+                    label_singular: Link
+                    name: links
+                    widget: list
+                    fields:
+                      - label: Label
+                        name: label
+                        widget: string
+                        required: false
+                      - label: Path
+                        name: path
+                        widget: string
+                        required: false
+                      - label: Open In New Window
+                        name: newWindow
+                        widget: boolean
+                        required: false
