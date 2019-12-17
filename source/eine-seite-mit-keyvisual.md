@@ -8,9 +8,10 @@ keyvisual:
   box-alignment: keyvisual__content--center
   box-style: keyvisual__box--transparent_text_dark
   headline: Box Headline
-  image-desktop: dummy/64-27-xxxl.png
-  image-mobile: dummy/64-27-l.png
-  image-tablet: dummy/64-27-xl.png
+  image-desktop: /images/uploads/pastinaken-apfel-risotto-mit-cranberries.jpg
+  image-mobile: /images/uploads/bioland_logo_2012.svg
+  image-tablet: /images/uploads/filmstrip.png
+  link-target: 'https://ruhmesmeile.com'
   link-text: Link text
   link-variant: button--outline_inverted
   small: false
