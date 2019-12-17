@@ -35,6 +35,8 @@ collections:
         widget: markdown
   - name: pages
     label: Pages
+    label_singular: Page
+    description: Pages consisting of default content element
     folder: source
     create: true
     slug: '{{slug}}'
@@ -60,30 +62,37 @@ collections:
             name: small
             widget: boolean
             default: false
+            hint: Display smaller version
           - label: Background Color
             name: bg-color
             widget: string
             default: ''
+            hint: Background HEX Color
           - label: Image (mobile)
             name: image-mobile
             widget: image
             default: dummy/64-27-l.png
+            hint: Image for mobile verison
           - label: Image (tablet)
             name: image-tablet
             widget: image
             default: dummy/64-27-xl.png
+            hint: Image for tablet version
           - label: Image (desktop)
             name: image-desktop
             widget: image
             default: dummy/64-27-xxxl.png
+            hint: Image for desktop version
           - label: Box visible
             name: box
             widget: boolean
             default: true
+            hint: Display box overlay
           - label: Box Alignment
             name: box-alignment
             widget: select
             default: keyvisual__content--center
+            hint: Box alignment BEM class
             options:
               - label: Keyvisual center
                 value: keyvisual__content--center
@@ -103,6 +112,7 @@ collections:
             name: box-style
             widget: select
             default: ''
+            hint: Box style BEM class
             options:
               - label: Light
                 value: keyvisual__box--light
@@ -114,14 +124,17 @@ collections:
             name: headline
             widget: string
             default: ''
+            hint: Headline
           - label: Box text
             name: text
             widget: markdown
             default: ''
+            hint: Bodytext
           - label: Link variant
             name: link-variant
             widget: select
             default: button--outline_inverted
+            hint: Link variant BEM class
             options:
               - label: Inverted
                 value: button--outline_inverted
@@ -131,17 +144,18 @@ collections:
             name: link-text
             widget: string
             default: ''
+            hint: Link text
           - label: Link target
             name: link-target
             widget: string
             default: ''
+            hint: Link target
   - name: settings
     label: Settings
-    file: source/data/settings.yml
+    label_singular: Setting
+    file: source/settings/navigation.yml
     fields:
-      - label: Navigation
-        name: navigation
-        widget: object
+      - widget: object
         fields:
           - label: Links
             label_singular: Link
