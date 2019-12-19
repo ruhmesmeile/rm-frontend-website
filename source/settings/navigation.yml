@@ -3,4 +3,9 @@ main-nav:
     - label: Standard
       page: Eine Seite ohne Keyvisual
     - label: Keyvisual
+      links:
+        - label: Unterlink 1
+          path: Eine Seite mit Keyvisual
+        - label: Unterlink 2
+          path: Eine Seite ohne Keyvisual
       page: Eine Seite mit Keyvisual
