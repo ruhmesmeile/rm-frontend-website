@@ -3,22 +3,21 @@ layout: default
 title: Eine Seite mit Keyvisual
 heading: Eine Seite mit Keyvisual
 keyvisual:
-  bg-color: '#FF00DD'
+  bg-color: '#d7a874'
   box: true
-  box-alignment: keyvisual__content--center
-  box-style: keyvisual__box--transparent_text_dark
+  box-alignment: visual-content--right
+  box-style: 
   headline: Box Headline
-  image-desktop: /images/uploads/pastinaken-apfel-risotto-mit-cranberries.jpg
-  image-mobile: /images/uploads/bioland_logo_2012.svg
-  image-tablet: /images/uploads/filmstrip.png
+  image-desktop: /images/uploads/keyvisual-950.png
+  image-mobile: /images/uploads/keyvisual-600.png
+  image-tablet: /images/uploads/keyvisual.png
   link-target: 'https://ruhmesmeile.com'
   link-text: Link text
-  link-variant: button--outline_inverted
+  link-variant: button button--ghost_light
   small: false
   text: |-
     2nd paragraph. _Italic_, **bold**, and `monospace`. Itemized lists
     look like:
-
     * this one
     * that one
     * the other one

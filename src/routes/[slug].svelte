@@ -25,6 +25,4 @@
   <title>{page.title}</title>
 </svelte:head>
 
-<Keyvisual
-  keyvisual = {page.keyvisual}
-  />
+<Keyvisual keyvisual = {page.keyvisual} />
