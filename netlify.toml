@@ -1,3 +1,7 @@
 [build]
   command = "npm run build-sapper"
   publish = "public"
+[[headers]]
+  for = "/*"
+  [headers.values]
+Access-Control-Allow-Origin = "*"
