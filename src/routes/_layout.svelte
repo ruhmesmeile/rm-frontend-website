@@ -48,10 +48,14 @@
   </header>
   <div class="main-header-sidebar-spacer" />
   <main class="content-wrap" id="content" tabindex="-1">
-    <div class="l-main-wrap">
-      <slot />
-    </div>
+    <slot />
+   <!-- <div class="l-main-wrap"></div> -->
   </main>
+  <a href="#🔝" class="scroll-to-top" data-component="base.scroll-to-top">
+    <svg class="icon " role="img">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-up"></use>
+    </svg>
+  </a>
   <footer class="main-footer">
     <div class="l-main-wrap">
       <div class="main-footer__top">
