@@ -62,6 +62,9 @@ collections:
         name: keyvisual
         widget: object
         fields:
+          - label: ID
+            name: id
+            widget: id
           - label: Small
             name: small
             widget: boolean

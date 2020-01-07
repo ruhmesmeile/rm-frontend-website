@@ -25,7 +25,6 @@
 
 <script>
 export let posts;
-
 </script>
 
 <style></style>

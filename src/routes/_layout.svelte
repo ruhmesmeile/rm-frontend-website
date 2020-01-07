@@ -1,7 +1,20 @@
+<script context="module">
+	export async function preload({ params, query }) {
+    const res = await this.fetch('settings/navigation.json');
+
+    if (res.status === 200) {
+      return { navigation: await res.json() };
+    } else {
+      this.error(res.status, data.message);
+    }
+	};
+</script>
+
 <script>
   import Nav from "../components/Nav.svelte";
 
   export let segment;
+  export let navigation;
 </script>
 
 <style>
@@ -10,7 +23,7 @@
 
 <svelte:head />
 
-<Nav {segment} />
+<Nav segment={segment} navigation={navigation} />
 
 <div class="page-wrap__content">
   <div class="sidebar-overlay" tabindex="0" />
@@ -74,7 +87,7 @@
               <a href="javascript:void(0)">Datenschutz</a>
             </li>
             <li class="nav-footer__list__item">
-              <a href="/sitemap.html">Sitemap</a>
+              <a href="javascript:void(0)">Sitemap</a>
             </li>
           </ul>
         </nav>

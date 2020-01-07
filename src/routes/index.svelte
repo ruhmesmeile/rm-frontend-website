@@ -20,6 +20,7 @@
 	<title>Sapper project template</title>
 	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </svelte:head>
+
 <div class="l-section">
   <div class="l-main-wrap l-main-wrap--narrow">
     <div class="l-container">

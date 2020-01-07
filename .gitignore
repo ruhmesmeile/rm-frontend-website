@@ -19,3 +19,6 @@ static/js
 static/patternlab
 static/server
 static/webpack-report.html
+
+# Local Netlify folder
+.netlify
