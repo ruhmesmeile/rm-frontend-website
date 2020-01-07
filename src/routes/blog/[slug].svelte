@@ -3,7 +3,7 @@
     // the `slug` parameter is available because
     // this file is called [slug].svelte
     const res = await this.fetch(`blog/${params.slug}.json`);
-
+   
     if (res.status === 200) {
       return { post: await res.json() };
     } else {
@@ -47,7 +47,6 @@
         <div itemprop="articleBody">
           <p class="text--teaser">{@html post.html}</p>
           <p>{@html post.html}</p>
-		  <p>{@html post.html}</p>
         </div>
       </article>
     </div>

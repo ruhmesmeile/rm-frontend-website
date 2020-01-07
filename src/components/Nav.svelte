@@ -1,5 +1,5 @@
 <script>
-	//export let segment;
+  export let segment;
 </script>
 
 <style></style>
@@ -32,14 +32,17 @@
 
       <nav class="nav-sidebar" id="nav-sidebar" aria-label="Hauptnavigation" data-component="base.nav-sidebar">
         <ul class="nav-sidebar__list nav-sidebar__list--level-1">
-          <li class="nav-sidebar__item nav-sidebar__item--level-1">
+          <li class="nav-sidebar__item {segment === undefined ? "nav-sidebar__item--current": ""} nav-sidebar__item--level-1">
             <a href="." class="nav-sidebar__item__link">Home</a>
           </li>
-          <li class="nav-sidebar__item nav-sidebar__item--level-1">
+          <li class="nav-sidebar__item  {segment === "about" ? "nav-sidebar__item--current": ""} nav-sidebar__item--level-1">
             <a href="about" class="nav-sidebar__item__link">About</a>
           </li>
-		      <li class="nav-sidebar__item nav-sidebar__item--level-1">
+		      <li class="nav-sidebar__item {segment === "blog" ? "nav-sidebar__item--current": ""} nav-sidebar__item--level-1">
             <a rel=prefetch href="blog" class="nav-sidebar__item__link">Blog</a>
+          </li>
+          	<li class="nav-sidebar__item {segment === "eine-seite-mit-keyvisual" ? "nav-sidebar__item--current": ""} nav-sidebar__item--level-1">
+            <a rel=prefetch href="eine-seite-mit-keyvisual" class="nav-sidebar__item__link">Seite mit Keyvisual</a>
           </li>
         </ul>
       </nav>
