@@ -24,10 +24,11 @@ export default {
 		replace({
 			values: {
 				'process.env.NODE_ENV': '"development"',
-				"require('crypto')": '{ randomBytes: function() { return ""; } }'
+				"require('crypto')": '{ randomBytes: function() { return ""; } }',
 			},
 			delimiters: ['', ''],
-    }),
+			exclude: '../node_modules/netlify-cms/**/*',
+		}),
 		json(),
 		resolve({
 			preferBuiltins: true
@@ -35,7 +36,7 @@ export default {
         commonjs({
             namedExports: {
                 'uuid': ['v1'],
-							'react': ['createElement'],
+				'react': ['createElement'],
             }
         }),
 		builtins({crypto: false}),
