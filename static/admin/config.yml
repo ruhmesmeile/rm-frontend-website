@@ -41,6 +41,10 @@ collections:
     create: true
     slug: '{{slug}}'
     fields:
+      - label: Id
+        name: Id
+        description: Id
+        widget: id
       - label: Layout
         name: layout
         description: Layout to use
@@ -62,9 +66,6 @@ collections:
         name: keyvisual
         widget: object
         fields:
-          - label: ID
-            name: id
-            widget: id
           - label: Small
             name: small
             widget: boolean
@@ -188,14 +189,9 @@ collections:
                     collection: pages
                     searchFields:
                       - title
-                    valueField: title
+                    valueField: id
                     displayFields:
                       - title
-                  - label: Open in new window
-                    name: new-window
-                    description: Should the link be opened in a new window?
-                    widget: boolean
-                    required: false
                   - label: Links
                     label_singular: Link
                     name: links
@@ -206,18 +202,13 @@ collections:
                         name: label
                         description: Link text
                         widget: string
-                      - label: Path
-                        name: path
+                      - label: Page
+                        name: page
                         description: Link any page
                         widget: relation
                         collection: pages
                         searchFields:
                           - title
-                        valueField: title
+                        valueField: id
                         displayFields:
                           - title
-                      - label: Open in new window
-                        name: new-window
-                        description: Should the link be opened in a new window?
-                        widget: boolean
-                        required: false

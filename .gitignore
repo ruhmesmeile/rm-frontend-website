@@ -20,5 +20,8 @@ static/patternlab
 static/server
 static/webpack-report.html
 
+static/admin/bundle.js
+static/admin/bundle.js.map
+
 # Local Netlify folder
 .netlify

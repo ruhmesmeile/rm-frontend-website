@@ -3,10 +3,11 @@ import commonjs from 'rollup-plugin-commonjs';
 import { terser } from 'rollup-plugin-terser';
 import builtins from 'rollup-plugin-node-builtins';
 import replace from '@rollup/plugin-replace';
+import json from '@rollup/plugin-json';
+import globals from 'rollup-plugin-node-globals';
 
-// `npm run build` -> `production` is true
-// `npm run dev` -> `production` is false
-const production = !process.env.ROLLUP_WATCH;
+const production = false;
+// const production = !process.env.ROLLUP_WATCH;
 
 export default {
 	input: 'admin/cms.js',
@@ -15,23 +16,29 @@ export default {
 		format: 'iife', // immediately-invoked function expression — suitable for <script> tags
 		sourcemap: true,
     	globals: {
-        	crypto: 'crypto',
         	'netlify-cms': 'CMS',
         	'create-react-class': 'createClass',
     	},
 	},
 	plugins: [
 		replace({
-			'process.env.NODE_ENV': '"development"'
+			values: {
+				'process.env.NODE_ENV': '"development"',
+			},
+			delimiters: ['', ''],
 		}),
-		resolve(), // tells Rollup how to find date-fns in node_modules
+		json(),
+		resolve({
+			preferBuiltins: true
+		}),
         commonjs({
             namedExports: {
                 'uuid': ['v1'],
-                'react': ['createElement'],
+				'react': ['createElement'],
             }
-        }), // converts date-fns to ES modules
-        builtins({crypto: false}),
-		production && terser() // minify, but only in production
+        }),
+		builtins({crypto: false}),
+		globals(),
+		production && terser()
 	],
 };
