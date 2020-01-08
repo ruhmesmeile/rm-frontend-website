@@ -119,7 +119,7 @@ collections:
           - label: Box style
             name: box-style
             widget: select
-            default: ''
+            default: 'keyvisual__box--transparent'
             hint: Box style BEM class
             options:
               - label: Light
