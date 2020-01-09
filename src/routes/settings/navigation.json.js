@@ -24,14 +24,14 @@ export async function get(req, res, next) {
 		}),
 	);
 
-	const pagesFrontMatterArray = pagesFrontMatter.reduce((result, page) => {
+	const pagesFrontMatterById = pagesFrontMatter.reduce((result, page) => {
 		result[page.Id] = page;
 		
 		return result;
 	}, []);
 
 	navigationSettingsJson['main-nav'].links.forEach((link) => {
-		link.path = pagesFrontMatterArray[link.page].slug;
+		link.path = pagesFrontMatterById[link.page].slug;
 	});
 
 	res.writeHead(200, {
