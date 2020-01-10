@@ -5,6 +5,7 @@ import builtins from 'rollup-plugin-node-builtins';
 import replace from '@rollup/plugin-replace';
 import json from '@rollup/plugin-json';
 import globals from 'rollup-plugin-node-globals';
+import babel from 'rollup-plugin-babel';
 
 const production = false;
 // const production = !process.env.ROLLUP_WATCH;
@@ -27,17 +28,27 @@ export default {
 				"require('crypto')": '{ randomBytes: function() { return ""; } }',
 			},
 			delimiters: ['', ''],
-			exclude: '../node_modules/netlify-cms/**/*',
+			exclude: '../node_modules/netlify-cms-app/**/*',
 		}),
 		json(),
 		resolve({
 			preferBuiltins: true
 		}),
+		babel({
+			plugins: [
+				'@babel/plugin-transform-react-jsx',
+				"react-html-attrs"
+			],
+			include: [
+				'admin/templates/**/*',
+				'admin/preview-templates/**/*',
+			],
+		}),
         commonjs({
             namedExports: {
                 'uuid': ['v1'],
 				'react': ['createElement'],
-            }
+            },
         }),
 		builtins({crypto: false}),
 		globals(),
