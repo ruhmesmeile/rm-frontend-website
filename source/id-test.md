@@ -18,20 +18,6 @@ content:
     small: false
     text: sfsfdsadsaf
     type: keyvisual
-  - bg-color: fuchsia
-    box: true
-    box-alignment: visual-content--center
-    box-style: keyvisual__box--transparent_text_dark
-    headline: Test23
-    image-desktop: /images/uploads/keyvisual.png
-    image-mobile: /images/uploads/keyvisual-600.png
-    image-tablet: /images/uploads/keyvisual-950.png
-    link-target: 'https://ruhmesmeile.com'
-    link-text: Testsdf
-    link-variant: button--outline_inverted
-    small: false
-    text: sfsfdsadsaf
-    type: bums
 keyvisual:
   bg-color: '#FF0000'
   box: true
