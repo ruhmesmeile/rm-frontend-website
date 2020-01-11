@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Layout from '../templates/Layout'
-import Keyvisual from '../templates/Keyvisual'
+import Layout from '../templates/Layout';
+import Keyvisual from '../templates/Keyvisual';
 
 function getComponent (element) {
     switch (element.type) {
@@ -18,7 +18,8 @@ export const PageTemplate = ({
     content,
 }) => (
     <Layout>
-        <div><h1>{title}</h1></div>
+        <h1>{title}</h1>
+        
         {content.map(element => getComponent(element))}
     </Layout>
 );
