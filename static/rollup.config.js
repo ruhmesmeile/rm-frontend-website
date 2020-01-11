@@ -32,7 +32,8 @@ export default {
 		}),
 		json(),
 		resolve({
-			preferBuiltins: true
+			preferBuiltins: true,
+			extensions: ['.mjs', '.js', '.json', '.node', '.jsx']
 		}),
 		babel({
 			plugins: [
@@ -42,7 +43,8 @@ export default {
 			include: [
 				'admin/templates/**/*',
 				'admin/preview-templates/**/*',
-			],
+				'../node_modules/@rm-frontend/**/*.jsx'
+			]
 		}),
         commonjs({
             namedExports: {

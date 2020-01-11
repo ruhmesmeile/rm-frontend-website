@@ -12,7 +12,7 @@
   </div>
 </button>
 
-<ul style="z-index: 100000;">
+<ul style="position: absolute; top: 0; left: 0; z-index: 100000;">
 {#each navigation['main-nav'].links as link}
   <li><a href="{link.path}" data-id="{link.page}">{link.label}</a></li>
 {/each}

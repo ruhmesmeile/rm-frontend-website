@@ -7,7 +7,6 @@ export async function get(req, res, next) {
 	// the `slug` parameter is available because
 	// this file is called [slug].json.js
 	const { slug } = req.params;
-
 	const md = new MarkdownIt();
 
 	// Read the file and parse the metadata + content
