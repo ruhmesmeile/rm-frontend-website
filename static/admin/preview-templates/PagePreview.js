@@ -9,7 +9,6 @@ const PagePreview = ({ entry, getAsset }) => {
     return (
       <PageTemplate
         title={data.title}
-        keyvisual={data.keyvisual}
         content={data.content}
       />
     );
