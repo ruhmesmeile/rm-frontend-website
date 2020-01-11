@@ -47,6 +47,7 @@
     "clean-css": "^4.2.1",
     "front-matter": "^3.0.2",
     "glob-fs": "^0.1.7",
+    "html-react-parser": "^0.10.0",
     "markdown-it": "^10.0.0",
     "mz": "^2.7.0",
     "netlify-cms-app": "^2.11.1",

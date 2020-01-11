@@ -1,5 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import MarkdownIt from 'markdown-it';
+import parse from 'html-react-parser';
+
+const md = new MarkdownIt();
 
 const Keyvisual = ({ data }) => (
     <div class="keyvisual">
@@ -18,7 +22,7 @@ const Keyvisual = ({ data }) => (
                     <div class={"keyvisual__box " + data['box-style']} style={{backgroundColor: data['bg-color']}}>
                         <p class="keyvisual__topic">{data.headline}</p>
                         <div class="keyvisual__text">
-                            <p>{data.text}</p>
+                            <p>{parse(md.render(data.text))}</p>
                         </div>
                         <div class="keyvisual__link">
                             <a href={data['link-target']} class={"button " + data['link-variant']}>{data['link-text']}</a>
