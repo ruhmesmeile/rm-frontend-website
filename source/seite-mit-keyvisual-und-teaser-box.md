@@ -7,7 +7,7 @@ content:
   - bg-color: '#fa8100'
     box: true
     box-alignment: keyvisual__content--center
-    box-style: keyvisual__box--transparent_text_dark
+    box-style: keyvisual__box--transparent
     headline: Keyvisual Box Headline
     image-desktop: /images/uploads/keyvisual.png
     image-mobile: /images/uploads/keyvisual-600.png
