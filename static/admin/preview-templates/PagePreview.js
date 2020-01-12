@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { PageTemplate } from '../templates/PageTemplate';
 
-const PagePreview = ({ entry, getAsset }) => {
+const PagePreview = ({ entry }) => {
   const data = entry.getIn(['data']).toJS();
 
   if (data) {

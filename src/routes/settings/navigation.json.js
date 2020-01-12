@@ -32,6 +32,18 @@ export async function get(req, res, next) {
 
 	navigationSettingsJson['main-nav'].links.forEach((link) => {
 		link.path = pagesFrontMatterById[link.page].slug;
+
+		if (link.links && link.links.length > 0) {
+			link.links.forEach((link) => {
+				link.path = pagesFrontMatterById[link.page].slug;
+
+				if (link.links && link.links.length > 0) {
+					link.links.forEach((link) => {
+						link.path = pagesFrontMatterById[link.page].slug;
+					});
+				}
+			});
+		}
 	});
 
 	res.writeHead(200, {

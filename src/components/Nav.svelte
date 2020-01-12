@@ -12,12 +12,6 @@
   </div>
 </button>
 
-<ul style="position: absolute; top: 0; left: 0; z-index: 100000;">
-{#each navigation['main-nav'].links as link}
-  <li><a href="{link.path}" data-id="{link.page}">{link.label}</a></li>
-{/each}
-</ul>
-
 <div id="sidebar" class="page-wrap__sidebar" data-component="base.sidebar">
   <div class="page-wrap__sidebar__content" id="sidebar-content">
     <div class="logo-main-wrap">
@@ -29,18 +23,29 @@
 
     <nav class="nav-sidebar" id="nav-sidebar" aria-label="Hauptnavigation" data-component="base.nav-sidebar">
       <ul class="nav-sidebar__list nav-sidebar__list--level-1">
-        <li class="nav-sidebar__item {segment === undefined ? "nav-sidebar__item--current": ""} nav-sidebar__item--level-1">
-          <a rel=prefetch href="." class="nav-sidebar__item__link">Home</a>
-        </li>
-        <li class="nav-sidebar__item  {segment === "about" ? "nav-sidebar__item--current": ""} nav-sidebar__item--level-1">
-          <a rel=prefetch href="about" class="nav-sidebar__item__link">About</a>
-        </li>
-        <li class="nav-sidebar__item {segment === "blog" ? "nav-sidebar__item--current": ""} nav-sidebar__item--level-1">
-          <a rel=prefetch href="blog" class="nav-sidebar__item__link">Blog</a>
-        </li>
-          <li class="nav-sidebar__item {segment === "eine-seite-mit-keyvisual" ? "nav-sidebar__item--current": ""} nav-sidebar__item--level-1">
-          <a rel=prefetch href="eine-seite-mit-keyvisual" class="nav-sidebar__item__link">Seite mit Keyvisual</a>
-        </li>
+        {#each navigation['main-nav'].links as link}
+          <li class="nav-sidebar__item {segment === link.path ? "nav-sidebar__item--current": ""} nav-sidebar__item--level-1">
+            <a rel=prefetch href="{link.path}" data-id="{link.page}" class="nav-sidebar__item__link">{link.label}</a>
+            {#if link.links && link.links.length > 0}
+              {#each link.links as link}
+                <ul class="nav-sidebar__list nav-sidebar__list--level-2">
+                  <li class="nav-sidebar__item {segment === link.path ? "nav-sidebar__item--current": ""} nav-sidebar__item--level-2">
+                    <a rel=prefetch href="{link.path}" data-id="{link.page}" class="nav-sidebar__item__link">{link.label}</a>
+                    {#if link.links && link.links.length > 0}
+                      {#each link.links as link}
+                        <ul class="nav-sidebar__list nav-sidebar__list--level-3">
+                          <li class="nav-sidebar__item {segment === link.path ? "nav-sidebar__item--current": ""} nav-sidebar__item--level-3">
+                            <a rel=prefetch href="{link.path}" data-id="{link.page}" class="nav-sidebar__item__link">{link.label}</a>
+                          </li>
+                        </ul>
+                      {/each}
+                    {/if}
+                  </li>
+                </ul>
+              {/each}
+            {/if}
+          </li>          
+        {/each}
       </ul>
     </nav>
   </div>
