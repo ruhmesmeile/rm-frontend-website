@@ -1,8 +1,8 @@
 ---
-Id: 659fa4a0-34a9-11ea-8000-01
+Id: a62ad830-3546-11ea-8000-01
 layout: default
-title: Seite mit Keyvisual und Teaser Box
-heading: Seite mit Keyvisual und Teaser Box
+title: Seite 07
+heading: Seite 07
 content:
   - bg-color: '#fa8100'
     box: true

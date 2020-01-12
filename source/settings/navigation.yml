@@ -1,4 +1,19 @@
 main-nav:
   links:
-    - label: Seite mit Keyvisual und Teaser Boxes
+    - label: Seite 01
       page: 659fa4a0-34a9-11ea-8000-01
+    - label: Seite 02
+      page: 1f3f8940-3543-11ea-8000-01
+      links:
+        - label: Seite 03
+          page: 2baf2140-3543-11ea-8000-01
+        - label: Seite 04
+          page: 363a8ff0-3543-11ea-8000-01
+    - label: Seite 05
+      page: 90a1ff20-3546-11ea-8000-01
+      links:
+        - label: Seite 06
+          page: 9cd6b100-3546-11ea-8000-01
+          links:
+            - label: Seite 07
+              page: a62ad830-3546-11ea-8000-01
