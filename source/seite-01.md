@@ -39,5 +39,13 @@ content:
         text: Teaser Box 3 Text
         topic: Teaser Box 3 Title
     type: teaser-box
+  - content: Test
+    headline:
+      mainheader: Test
+      subheader: Test
+    textpic:
+      caption: Test
+      image: /images/uploads/bioland_logo_2012.svg
+    type: textpic-intextleft
 ---
 
