@@ -14,6 +14,7 @@
 
 <script>
   import Keyvisual from '@rm-frontend/visuals/source/2-molecules/keyvisual/keyvisual/Keyvisual.svelte';
+  import TextpicIntextleft from '@rm-frontend/base/source/3-organisms/standard-content/typo3-standard-content/TextpicIntextleft.svelte';
   import Teaserbox from '@rm-frontend/base/source/3-organisms/teaser-box/Teaserbox.svelte';
 
   export let page;
@@ -26,6 +27,7 @@
   components = {};
   components['keyvisual'] = Keyvisual;
   components['teaser-box'] = Teaserbox;
+  components['textpic-intextleft'] = TextpicIntextleft;
 </script>
 
 <style>

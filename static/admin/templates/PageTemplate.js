@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 import Layout from '../templates/Layout';
 
+import TextpicIntextleft from '@rm-frontend/base/source/3-organisms/standard-content/typo3-standard-content/TextpicIntextleft';
 import Teaserbox from '@rm-frontend/base/source/3-organisms/teaser-box/Teaserbox.jsx';
 import Keyvisual from '@rm-frontend/visuals/source/2-molecules/keyvisual/keyvisual/Keyvisual.jsx';
 
@@ -10,6 +11,8 @@ function getComponent (element) {
     switch (element.type) {
         case 'teaser-box':
             return <Teaserbox key="teaser-box" data={element} />;
+        case 'textpic-intextleft':
+            return <TextpicIntextleft key="textpic-intextleft" data={element} />
         default:
             return `No component definition for type: ${element.type}`;
     }

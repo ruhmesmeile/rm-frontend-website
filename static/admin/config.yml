@@ -98,6 +98,43 @@ collections:
                     widget: string
                     default: ''
                     hint: Link target
+          - label: Textpic Intextleft
+            name: textpic-intextleft
+            widget: object
+            fields:
+              - label: Headline
+                name: headline
+                widget: object
+                fields:
+                  - label: Main Headline
+                    name: mainheader
+                    widget: string
+                    default: ''
+                    hint: Main Headline portion of Headline
+                  - label: Sub Headline
+                    name: subheader
+                    widget: string
+                    default: ''
+                    hint: Sub Headline portion of Headline
+              - label: Textpic
+                name: textpic
+                widget: object
+                fields:
+                  - label: Image
+                    name: image
+                    widget: image
+                    default: dummy/64-27-l.png
+                    hint: Image for Textpic
+                  - label: Caption
+                    name: caption
+                    widget: string
+                    default: ''
+                    hint: Caption for Textpic
+              - label: Content
+                name: content
+                widget: markdown
+                default: ''
+                hint: Bodytext
           - label: Keyvisual
             name: keyvisual
             widget: object
