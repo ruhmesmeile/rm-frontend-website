@@ -10,21 +10,33 @@ function getComponent (element) {
     switch (element.type) {
         case 'teaser-box':
             return <Teaserbox key="teaser-box" data={element} />;
-        case 'keyvisual':
-            return <Keyvisual key="keyvisual" data={element} />;
         default:
             return `No component definition for type: ${element.type}`;
     }
 };
+
+const isKeyvisual = element => element.type === 'keyvisual';
 
 export const PageTemplate = ({
     title,
     content,
 }) => (
     <Layout>
-        <h1>{title}</h1>
+        {content.find(isKeyvisual) &&
+            <Keyvisual key="keyvisual" data={content.find(isKeyvisual)} />
+        }
 
-        {content.map(element => getComponent(element))}
+        <div class="l-header-only-wrap">
+            <div class="l-main-wrap">
+                <div class="l-container">
+                    <header class="content-headline  content-headline--page_header">
+                        <h1>{title}</h1>
+                    </header>
+                </div>
+            </div>
+        </div>
+
+        {content.filter(element => !isKeyvisual(element)).map(element => getComponent(element))}
     </Layout>
 );
 
