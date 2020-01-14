@@ -39,12 +39,35 @@ content:
         text: Teaser Box 3 Text
         topic: Teaser Box 3 Title
     type: teaser-box
-  - content: Test
+  - content: >-
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+      eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+      voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+      clita kasd gubergren, no sea takimata sanctus est **Lorem ipsum** dolor
+      sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+      diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+      erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+      rebum.
+
+
+      > Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+      sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+      diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+      erat, sed diam voluptua.
+
+
+      At vero eos *et accusam et justo duo dolores et ea rebum. Stet clita kasd
+      gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Duis
+      autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
+      consequat, vel illum dolore eu feugiat nulla facilisi*s at vero eros et
+      accumsan et iusto odio dignissim qui blandit praesent luptatum zzril
+      delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit
+      amet,
     headline:
-      mainheader: Test
-      subheader: Test
+      mainheader: 'Text image intext left '
+      subheader: 'Subheader Text & Media '
     textpic:
-      caption: Test
+      caption: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
       image: /images/uploads/bioland_logo_2012.svg
     type: textpic-intextleft
 ---
