@@ -5,10 +5,13 @@ import { PageTemplate } from '../templates/PageTemplate';
 const PagePreview = ({ entry }) => {
   const data = entry.getIn(['data']).toJS();
 
+  data.content = data.content || [];
+
   if (data) {
     return (
       <PageTemplate
-        title={data.title}
+        keyvisual={data.keyvisual}
+        heading={data.heading}
         content={data.content}
       />
     );

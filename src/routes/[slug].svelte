@@ -17,15 +17,24 @@
   import TextpicIntextleft from '@rm-frontend/base/source/3-organisms/standard-content/typo3-standard-content/TextpicIntextleft.svelte';
   import Teaserbox from '@rm-frontend/base/source/3-organisms/teaser-box/Teaserbox.svelte';
 
+  import { onMount } from 'svelte';
+
+  onMount(() => {
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  });
+
   export let page;
   export let components;
-  export let keyvisual;
-  
-  const isKeyvisual = element => element.type === 'keyvisual';
-  keyvisual = page.content.find(isKeyvisual);
 
   components = {};
-  components['keyvisual'] = Keyvisual;
   components['teaser-box'] = Teaserbox;
   components['textpic-intextleft'] = TextpicIntextleft;
 </script>
@@ -38,8 +47,8 @@
   <title>{page.title}</title>
 </svelte:head>
 
-{#if keyvisual}
-  <Keyvisual data={keyvisual} />
+{#if page.keyvisual}
+  <Keyvisual data={page.keyvisual} />
 {/if}
 
 <div class="l-header-only-wrap">
@@ -52,6 +61,6 @@
   </div>
 </div>
 
-{#each page.content.filter(element => !isKeyvisual(element)) as element}
+{#each page.content as element}
   <svelte:component this={components[element.type]} data={element} />
 {/each}

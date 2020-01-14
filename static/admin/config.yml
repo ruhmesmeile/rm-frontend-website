@@ -50,10 +50,107 @@ collections:
         description: Layout to use
         widget: hidden
         default: default
-      - label: Title
-        name: title
-        description: Title of the page
-        widget: string
+      - label: Keyvisual
+        name: keyvisual
+        widget: object
+        fields:
+          - label: Show
+            name: show
+            description: 'Choose wether to show the element, or not'
+            widget: boolean
+            default: false
+          - label: Small
+            name: small
+            widget: boolean
+            default: false
+            hint: Display smaller version
+          - label: Background Color
+            name: bg-color
+            widget: string
+            default: ''
+            hint: Background HEX Color
+          - label: Image (mobile)
+            name: image-mobile
+            widget: image
+            default: dummy/64-27-l.png
+            hint: Image for mobile verison
+          - label: Image (tablet)
+            name: image-tablet
+            widget: image
+            default: dummy/64-27-xl.png
+            hint: Image for tablet version
+          - label: Image (desktop)
+            name: image-desktop
+            widget: image
+            default: dummy/64-27-xxxl.png
+            hint: Image for desktop version
+          - label: Box visible
+            name: box
+            widget: boolean
+            default: true
+            hint: Display box overlay
+          - label: Box Alignment
+            name: box-alignment
+            widget: select
+            default: keyvisual__content--center
+            hint: Box alignment BEM class
+            options:
+              - label: Left
+                value: keyvisual__content--center
+              - label: 'Left, content indent'
+                value: visual-content--left visual-content--indent
+              - label: Center
+                value: visual-content--center
+              - label: Center Bottom
+                value: visual-content--center visual-content--bottom
+              - label: Center Top
+                value: visual-content--center visual-content--top
+              - label: Right
+                value: visual-content--right
+              - label: 'Right, content indent'
+                value: visual-content--right visual-content--indent
+          - label: Box style
+            name: box-style
+            widget: select
+            default: ''
+            hint: Box style BEM class
+            options:
+              - label: Light
+                value: keyvisual__box--light
+              - label: Text Dark
+                value: keyvisual__box--transparent_text_dark
+              - label: Transparent
+                value: keyvisual__box--transparent
+          - label: Box headline
+            name: headline
+            widget: string
+            default: ''
+            hint: Headline
+          - label: Box text
+            name: text
+            widget: markdown
+            default: ''
+            hint: Bodytext
+          - label: Link variant
+            name: link-variant
+            widget: select
+            default: button--outline_inverted
+            hint: Link variant BEM class
+            options:
+              - label: Inverted
+                value: button--outline_inverted
+              - label: Normal
+                value: button--outline
+          - label: Link text
+            name: link-text
+            widget: string
+            default: ''
+            hint: Link text
+          - label: Link target
+            name: link-target
+            widget: string
+            default: ''
+            hint: Link target
       - label: Heading
         name: heading
         description: Main headline of the page
@@ -135,102 +232,6 @@ collections:
                 widget: markdown
                 default: ''
                 hint: Bodytext
-          - label: Keyvisual
-            name: keyvisual
-            widget: object
-            fields:
-              - label: Small
-                name: small
-                widget: boolean
-                default: false
-                hint: Display smaller version
-              - label: Background Color
-                name: bg-color
-                widget: string
-                default: ''
-                hint: Background HEX Color
-              - label: Image (mobile)
-                name: image-mobile
-                widget: image
-                default: dummy/64-27-l.png
-                hint: Image for mobile verison
-              - label: Image (tablet)
-                name: image-tablet
-                widget: image
-                default: dummy/64-27-xl.png
-                hint: Image for tablet version
-              - label: Image (desktop)
-                name: image-desktop
-                widget: image
-                default: dummy/64-27-xxxl.png
-                hint: Image for desktop version
-              - label: Box visible
-                name: box
-                widget: boolean
-                default: true
-                hint: Display box overlay
-              - label: Box Alignment
-                name: box-alignment
-                widget: select
-                default: keyvisual__content--center
-                hint: Box alignment BEM class
-                options:
-                  - label: Left
-                    value: keyvisual__content--center
-                  - label: 'Left, content indent'
-                    value: visual-content--left visual-content--indent
-                  - label: Center
-                    value: visual-content--center
-                  - label: Center Bottom
-                    value: visual-content--center visual-content--bottom
-                  - label: Center Top
-                    value: visual-content--center visual-content--top
-                  - label: Right
-                    value: visual-content--right
-                  - label: 'Right, content indent'
-                    value: visual-content--right visual-content--indent
-              - label: Box style
-                name: box-style
-                widget: select
-                default: ''
-                hint: Box style BEM class
-                options:
-                  - label: Light
-                    value: keyvisual__box--light
-                  - label: Text Dark
-                    value: keyvisual__box--transparent_text_dark
-                  - label: Transparent
-                    value: keyvisual__box--transparent
-              - label: Box headline
-                name: headline
-                widget: string
-                default: ''
-                hint: Headline
-              - label: Box text
-                name: text
-                widget: markdown
-                default: ''
-                hint: Bodytext
-              - label: Link variant
-                name: link-variant
-                widget: select
-                default: button--outline_inverted
-                hint: Link variant BEM class
-                options:
-                  - label: Inverted
-                    value: button--outline_inverted
-                  - label: Normal
-                    value: button--outline
-              - label: Link text
-                name: link-text
-                widget: string
-                default: ''
-                hint: Link text
-              - label: Link target
-                name: link-target
-                widget: string
-                default: ''
-                hint: Link target
   - name: settings
     description: General settings
     label: Settings
@@ -240,6 +241,25 @@ collections:
         name: navigation
         file: source/settings/navigation.yml
         fields:
+          - widget: object
+            label: Homepage
+            name: homepage
+            description: Page to initially display
+            fields:
+              - label: Label
+                name: label
+                description: Link text
+                widget: string
+              - label: Page
+                name: page
+                description: Link any page
+                widget: relation
+                collection: pages
+                searchFields:
+                  - title
+                valueField: Id
+                displayFields:
+                  - title
           - widget: object
             label: Main navigation
             name: main-nav
