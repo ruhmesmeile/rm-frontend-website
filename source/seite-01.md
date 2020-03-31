@@ -18,7 +18,7 @@ keyvisual:
   text: >-
     Lorem **ipsum** dolor sit amet, consectetur adipiscing elit. Donec laoreet,
     dui eget fermentum rhoncus, turpis metus vestibulum eros, sit amet feugiat
-    libero sem nec *tortor*. Vestibulum in molestie massa, eu aliquam magna.
+    libero sem nec *tortor*. Vestibulum in molestie massa, eu aliquam magna!
 heading: Seite 01
 content:
   - items:
